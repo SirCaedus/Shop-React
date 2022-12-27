@@ -1,0 +1,43 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.logo{
+  width: 6rem; 
+}
+
+a:link, a:visited, a:active{
+  text-decoration:none;
+}
+
+.btnNav:hover{
+  background-color: aqua;
+  border-radius: 3rem;
+  transition: all .2s ease-in-out;
+  
+}
+
+.btnNav:active{
+  transform: scale(0.8);
+}
+
+.btnNav img:hover{
+  animation-name: animacion;
+  animation-timing-function: ease-in-out;
+  animation-duration: 2s;
+}
+
+@keyframes animacion{
+  20%{transform: rotate(25deg)}
+  40%{transform: rotate(-25deg)}
+  60%{transform: rotate(25deg)}
+  80%{transform: rotate(-25deg)}
+  100%{transform: rotate(0deg)}
+}
+
+@media (min-width: 1200px){
+  .logo{
+    width:10rem;
+  }
+} 

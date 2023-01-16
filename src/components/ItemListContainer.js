@@ -1,47 +1,40 @@
 import { useEffect,useState } from 'react'
-import {useParams} from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import ItemList from './ItemList'
-import Stock from './data.json'
-
-
+import Stock from './data'
 
 const ItemListContainer = () => {
 
     const {categoria} = useParams()
     const [carga,setCarga] = useState(false)
     const [productos,setProductos] = useState([])
-    useEffect( () =>{
 
+    useEffect( () => {
         const stock = fetch(Stock)
-        stock
-            .then((respuesta) =>{
-                const productos = Stock
-                return productos
-            })
-            .then((productos)=>{
-                if ((categoria === 'Ball') || (categoria === 'Med')){
-                    console.log('holi')
-                    productos = productos.filter((obj) => obj.clase === categoria) 
-                }
-                console.log(productos)
-                setProductos(productos)
-                setCarga(true)
-            })
-            .catch((error) =>{
-                console.log('f')
-            })
 
-
+            stock
+                .then((respuesta) =>{
+                    const productos = Stock
+                    return productos
+                })
+                .then((productos)=>{
+                    if ((categoria === 'Ball') || (categoria === 'Med')){
+                        productos = productos.filter((obj) => obj.clase === categoria) 
+                    }
+                    setProductos(productos)
+                    setCarga(true)
+                })
+                .catch((error) =>{
+                    console.log(error)
+                })
 
    },[categoria])
 
    return (
         <div>
-            {carga ? 'CARGADOS' : 'Cargando...'}
-            <ItemList productos={productos}/>
+            {carga ? <ItemList productos={productos}/> : 'Cargando...'}
         </div>
    )
-
 
 }
 

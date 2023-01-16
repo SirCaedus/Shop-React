@@ -1,12 +1,35 @@
-import { useParams } from "react-router-dom"
+import { useEffect,useState } from 'react'
+import { useParams } from 'react-router-dom'
+import Stock from '../components/data'
+import ItemDetail from './ItemDetail'
 
 const ItemDetailContainer = () => {
     
-    const params = useParams()
-    console.log(params.id)
-    
+    const {id} = useParams()
+    const [producto,setProducto] = useState({})
+
+    useEffect ( () => {
+        const stock = fetch(Stock)
+
+            stock
+                .then((respuesta) =>{
+                    const productos = Stock
+                    return productos
+                })
+                .then((productos)=>{
+                    productos = productos.find((obj) => obj.id === parseInt(id)) 
+                    setProducto(productos)
+                })
+                .catch((error) =>{
+                    console.log(error)
+                })
+
+    },[id])
+
     return (
-        <div>ItemDetailContainer</div>
+        <div>
+            <ItemDetail producto={producto}/>
+        </div>
     )
 }
 

@@ -1,6 +1,6 @@
-import ItemListContainer from './ItemListContainer.js'
-import ItemDetailContainer from './ItemDetailContainer.js'
-import {Route, Routes} from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
+import ItemListContainer from './ItemListContainer'
+import ItemDetailContainer from './ItemDetailContainer'
 
 const Main = () => {
     return (

@@ -1,12 +1,13 @@
 import { useEffect,useState } from 'react'
 import { useParams } from 'react-router-dom'
 import ItemList from './ItemList'
+import ItemDetailContainer from './ItemDetailContainer'
 import Stock from './data'
 
 const ItemListContainer = () => {
 
-    const {categoria} = useParams()
-    const [carga,setCarga] = useState(false)
+    const {categoria,id} = useParams()
+    const [carga,setCarga] = useState()
     const [productos,setProductos] = useState([])
 
     useEffect( () => {
@@ -18,21 +19,30 @@ const ItemListContainer = () => {
                     return productos
                 })
                 .then((productos)=>{
-                    if ((categoria === 'Ball') || (categoria === 'Med')){
-                        productos = productos.filter((obj) => obj.clase === categoria) 
+                    if (categoria === undefined || id === undefined){
+                        setCarga(true)
                     }
+
+                    if (categoria === 'Ball' || categoria === 'Med'){
+                        productos = productos.filter((obj) => obj.clase === categoria)
+                        setCarga(true) 
+                    }
+                    if (id !== undefined){
+                        productos = productos.find((obj) => obj.id === parseInt(id))
+                        setCarga(false) 
+                    }
+                    
                     setProductos(productos)
-                    setCarga(true)
                 })
                 .catch((error) =>{
                     console.log(error)
                 })
 
-   },[categoria])
+   },[categoria,id])
 
    return (
         <div>
-            {carga ? <ItemList productos={productos}/> : 'Cargando...'}
+            {carga ? <ItemList productos={productos}/> : <ItemDetailContainer productos={productos}/>}
         </div>
    )
 

@@ -2,7 +2,7 @@ import { useEffect,useState } from 'react'
 import { useParams } from 'react-router-dom'
 import ItemList from './ItemList'
 import ItemDetailContainer from './ItemDetailContainer'
-import Stock from './data'
+import Stock from './datalol'
 
 const ItemListContainer = () => {
 

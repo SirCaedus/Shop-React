@@ -6,11 +6,11 @@ const ItemDetailContainer = ({productos}) => {
         <Container>
             <Row>
                 <Col sm={4}>
-                    <img src={Placeholder} className='imgDetail' alt='placeholder'/>
+                    <img src={productos.imagen} className='imgDetail' alt={productos.nombre}/>
                 </Col>
                 <Col sm={8}>
                     <Row>
-                        {productos.nombre}
+                        <h2>{productos.nombre}</h2>
                     </Row>
                     <Row>
                         clase: {productos.clase}

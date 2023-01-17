@@ -1,0 +1,561 @@
+[
+  {
+     "id":1,
+     "nombre":"Botas de Cuero",
+     "clase":"Botas",
+     "precio":300,
+     "imagen":"https://media.vandal.net/m/9-2021/20219214331822_2.jpg",
+     "descripcion":[
+        "25 de Velocidad de Movimiento"
+     ]
+  },
+  {
+     "id":2,
+     "nombre":"Botas de Mercurio",
+     "clase":"Botas",
+     "precio":1100,
+     "imagen":"https://media.vandal.net/m/9-2021/20219214331822_5.jpg",
+     "descripcion":[
+        "25 de Resistencia Mágica",
+        "45 de Velocidad de Movimiento",
+        "30% de Tenacidad",
+        "La Tenacidad reduce la duración de los efectos de aturdimiento, ralentización, provocación, miedo, silencio, ceguera, polimorfia e inmovilización. No tiene efecto en lanzamientos por el aire ni supresiones."
+     ]
+  },
+  {
+     "id":3,
+     "nombre":"Grebas del Berserker",
+     "clase":"Botas",
+     "precio":1100,
+     "imagen":"https://media.vandal.net/m/9-2021/20219214331822_1.jpg",
+     "descripcion":[
+        "35% de Velocidad de Ataque",
+        "45 de Velocidad de Movimiento"
+     ]
+  },
+  {
+     "id":4,
+     "nombre":"Botas de Rapidez",
+     "clase":"Botas",
+     "precio":900,
+     "imagen":"https://media.vandal.net/m/9-2021/20219214331822_3.jpg",
+     "descripcion":[
+        "60 de Velocidad de Movimiento",
+        "Pasiva - La potencia de los efectos de ralentización se reduce un 25%."
+     ]
+  },
+  {
+     "id":5,
+     "nombre":"Botas del Hechicero",
+     "clase":"Botas",
+     "precio":1100,
+     "imagen":"https://media.vandal.net/m/9-2021/20219214331822_8.jpg",
+     "descripcion":[
+        "18 de Penetración de Magia",
+        "45 de Velocidad de Movimiento"
+     ]
+  },
+  {
+     "id":6,
+     "nombre":"Punteras de Acero Revestidas",
+     "clase":"Botas",
+     "precio":1100,
+     "imagen":"https://media.vandal.net/m/9-2021/20219214331822_7.jpg",
+     "descripcion":[
+        "20 de Armadura",
+        "45 de Velocidad de Movimiento",
+        "Pasiva - Reduce un 12% el daño proveniente de ataques."
+     ]
+  },
+  {
+     "id":7,
+     "nombre":"Botas de Movilidad",
+     "clase":"Botas",
+     "precio":1000,
+     "imagen":"https://media.vandal.net/m/9-2021/20219214331822_6.jpg",
+     "descripcion":[
+        "25 de Velocidad de Movimiento",
+        "Pasiva - Al estar fuera de combate durante al menos 5 segundos, aumenta el efecto de este objeto a 115."
+     ]
+  },
+  {
+     "id":8,
+     "nombre":"Botas Jonias de la Lucidez",
+     "clase":"Botas",
+     "precio":950,
+     "imagen":"https://media.vandal.net/m/9-2021/20219214331822_4.jpg",
+     "descripcion":[
+        "20 de Aceleración de Habilidad",
+        "45 de Velocidad de Movimiento",
+        "Pasiva - Obtienes 12 de Aceleración de hechizos de invocador.",
+        "\"Este objeto está dedicado en honor a la victoria de Jonia sobre Noxus en la Revancha por las Provincias Meridionales del 10 de diciembre del 20 CLE.\""
+     ]
+  },
+  {
+      "id":9,
+      "nombre":"Fuerza de la Trinidad",
+      "clase":"Peleador",
+      "precio":3333,
+      "imagen":"https://media.vandal.net/m/9-2021/20219611374767_9.jpg",
+      "descripcion":[
+         "35 de Daño de Ataque",
+         "20 de Aceleración de Habilidad",
+         "30% de Velocidad de Ataque",
+         "300 de Vida",
+         "Pasiva - Ataque Triple: Los ataques otorgan velocidad de movimiento. Si el objetivo es un campeón, aumenta tu daño de ataque básico y se acumula.",
+         "Pasiva - Espada Encantada: Después de usar una habilidad, tu próximo ataque recibe una mejora de daño adicional.",
+         "Pasiva Mítica: Otorga a todos los otros objetos legendarios Daño de Ataque, Aceleración de Habilidad y Velocidad de movimientos adicionales."
+      ]
+  },
+  {
+      "id":10,
+      "nombre":"Cercenador Divino",
+      "clase":"Peleador",
+      "precio":3300,
+      "imagen":"https://media.vandal.net/m/9-2021/2021961115879_1.jpg",
+      "descripcion":[
+         "40 de Daño de Ataque",
+         "300 de Vida",
+         "20 de Aceleración de Habilidad",
+         "Pasiva - Espada Encantada: Después de usar una habilidad, tu próximo ataque recibe una mejora de daño adicional al impacto. si el objetivo es un campeón, también lo cura.",
+         "Pasiva Mítica: Otorga a todos los otros objetos legendarios Penetración de Armadura y Penetración de Magia adicionales."
+      ]
+  },
+  {
+      "id":11,
+      "nombre":"Bebedor de Sangre",
+      "clase":"Peleador",
+      "precio":3300,
+      "imagen":"https://media.vandal.net/m/9-2021/20219611182718_2.jpg",
+      "descripcion":[
+         "55 de Daño de Ataque",
+         "300 de Vida",
+         "20 de Aceleración de Habilidad",
+         "8% de Omnivampirismo",
+         "Activa - Corte Sediento: Inflige daño a los enemigos cercanos. Restaura vida por cada campeón alcanzado.",
+         "Pasiva Mítica: Otorga a todos los otros objetos legendarios Aceleración de Habilidad adicional."
+      ]
+  },
+  {
+      "id":12,
+      "nombre":"Rompeavances",
+      "clase":"Peleador",
+      "precio":3300,
+      "imagen":"https://media.vandal.net/m/9-2021/20219611374767_7.jpg",
+      "descripcion":[
+         "50 de Daño de Ataque",
+         "20% de Velocidad de Ataque",
+         "300 de Vida",
+         "20 de Aceleración de Habilidad",
+         "Activa - Corte Obstructor: Inflige daño a los enemigos cercanos y los ralentiza. Se puede lanzar mientras te mueves.",
+         "Pasiva - Marcha Heroica: Infligir daño físico otorga velocidad de movimiento.",
+         "Pasiva Mítica: Otorga a todso los otros objetos legendarios Velocidad de Movimiento adicional."
+      ]
+  },
+  {
+      "id":13,
+      "nombre":"Hidra Voraz",
+      "clase":"Peleador",
+      "precio":3400,
+      "imagen":"https://media.vandal.net/m/9-2021/20219313483379_15.jpg",
+      "descripcion":[
+         "65 de Daño de Ataque",
+         "20 de Aceleración de Habilidad",
+         "10% de Omnivampirismo",
+         "Pasiva - Hender: Los ataques y las habilidades infligen daño físico a otros enemigos cercanos.",
+         "Pasiva - Carnívoro: Obtiene daño de ataque al matar a un súbdito y 2 veces esa cantidad al matar a un campeón, monstruo grande o súbdito de asedio. Se pierde el 60% de tus acumulaciones al morir."
+      ]
+  },
+  {
+      "id":14,
+      "nombre":"Hidra Titánica",
+      "clase":"Peleador",
+      "precio":3300,
+      "imagen":"https://media.vandal.net/m/9-2021/20219313514673_10.jpg",
+      "descripcion":[
+         "30 de Daño de Ataque",
+         "500 de Vida",
+         "Pasiva - Coloso: Obtienes daño de ataque adicional basaado en tu vida adicional.",
+         "Pasiva - Hender: Los ataques infligen daño adicional al impacto, lo que crea una onda expansiva que inflige daño a los enemigos detrás del objetivo."
+      ]
+  },
+  {
+      "id":15,
+      "nombre":"Lanza de Shojin",
+      "clase":"Peleador",
+      "precio":3400,
+      "imagen":"https://codigoesports.com/wp-content/uploads/2022/11/Shojin.png",
+      "descripcion":[
+         "65 de Daño de Ataque",
+         "300 de Vida",
+         "20 de Aceleración de Habilidad",
+         "Pasiva - Fuerza de Dragón: Los hechizos que no sean definitivas obtienen Aceleración de Habilidad, reducido para los hechizos inmovilizantes.",
+         "Pasiva - Exigencia: Obtienes Velocidad de Movimiento aumentada según tu vida faltante."
+      ]
+  },
+  {
+      "id":16,
+      "nombre":"Lanza de la Muerte",
+      "clase":"Peleador",
+      "precio":3300,
+      "imagen":"https://media.vandal.net/m/9-2021/20219313441280_15.jpg",
+      "descripcion":[
+         "55 de Daño de Ataque",
+         "45 de Armadura",
+         "15 de Aceleración de Habilidad",
+         "Pasiva - Ignorar Dolor: El daño recibido se inflige a lo largo del tiempo.",
+         "Pasiva - Desafiar: Los derribos de campeones disipan el daño restante de Ignorar Dolor, y restauran vida a lo largo del tiempo."
+      ]
+  },
+  {
+      "id":17,
+      "nombre":"Guantelete de Sterak",
+      "clase":"Peleador",
+      "precio":3100,
+      "imagen":"https://media.vandal.net/m/9-2021/20219313514673_6.jpg",
+      "descripcion":[
+         "400 de Vida",
+         "Pasiva - Garras que Atrapan: Obtienes Daño de Ataque básico como Daño de Ataque adicional.",
+         "Pasiva - Salvavidas: Tras recibir daño que reduciría  tu Vida por debajo del 30%, obtienes un escudo que decae luego de unos segundos."
+      ]
+  },
+  {
+      "id":18,
+      "nombre":"Fauces de Malmortius",
+      "clase":"Peleador",
+      "precio":2900,
+      "imagen":"https://media.vandal.net/m/9-2021/20219313483379_1.jpg",
+      "descripcion":[
+         "55 de Daño de Ataque",
+         "50 de Resistencia Mágica",
+         "20 de Aceleración de Habilidad",
+         "Pasiva - Salvavidas: Tras recibir daño mágico que reduciría la vida por debajo del 30%, obtienes un escudo contra daño mágico. Cuando Salvavidas se activa, obtienes Omnivampirismo hasta el final del combate."
+      ]
+  },
+  {
+      "id":19,
+      "nombre":"Cuchilla Oscura",
+      "clase":"Peleador",
+      "precio":3100,
+      "imagen":"https://media.vandal.net/m/9-2021/20219313441280_6.jpg",
+      "descripcion":[
+         "45 de Daño de Ataque",
+         "350 de Vida",
+         "30 de Aceleración de Habilidad",
+         "Pasiva - Cortar: Infligir daño físico a un campeón aplica una acumulación de reducción de armadura.",
+         "Pasiva - Rabia: Infligir daño físico a un campeón otorga Velocidad de Movimiento por cada acumulación de Cortar que tenga."
+      ]
+  },
+  {
+      "id":20,
+      "nombre":"Amanecer Plateado",
+      "clase":"Peleador",
+      "precio":3000,
+      "imagen":"https://media.vandal.net/m/9-2021/20219313514673_3.jpg",
+      "descripcion":[
+         "40 de Daño de Ataque",
+         "300 de Vida",
+         "40 de Resistencia Mágica",
+         "Activa - Capa Mercurial: Elimina todas las debilitaciones de control de masas y obtienes Tenacidad y resistencia a ralentizaciones."
+      ]
+  },
+  {
+      "id":21,
+      "nombre":"Manamune",
+      "clase":"Peleador",
+      "precio":2900,
+      "imagen":"https://media.vandal.net/m/9-2021/20219313441280_30.jpg",
+      "descripcion":[
+         "35 de Daño de Ataque",
+         "500 de Maná",
+         "15 de Aceleración de Habilidad",
+         "Pasiva - Asombro: Obtienes Daño de Ataque adicional igual a tu Maná máximo.",
+         "Pasiva - Carga de Maná: Impacta a un objetivo con una habilidad o ataque para consumir una carga y obtener 3 de Maná adicional, que se duplica si el objetivo es un campeón. Otorga un Máximo de 360 de Maná. Obtienes una Carga de Maná cada 8 seg."
+      ]
+  },
+  {
+      "id":22,
+      "nombre":"Sierraespada Quimopunk",
+      "clase":"Peleador",
+      "precio":2800,
+      "imagen":"https://media.vandal.net/m/9-2021/20219313441280_11.jpg",
+      "descripcion":[
+         "55 de Daño de Ataque",
+         "250 de Vida",
+         "25 de Aceleración de Habilidad",
+         "Pasiva - Corte Mutilador: Infligir daño físico aplica un 25% de Heridas Graves a campeones enemigos durante 3 seg. Si el objetivo está por debajo del 50% de Vida, este efecto aumenta a un 40%.",
+         "Heridas Graves reduce la efectividad de los efectos de curación y regeneración."
+      ]
+  },
+  {
+      "id":23,
+      "nombre":"Rompecascos",
+      "clase":"Peleador",
+      "precio":2800,
+      "imagen":"https://media.vandal.net/m/9-2021/20219313441280_25.jpg",
+      "descripcion":[
+         "50 de Daño de Ataque",
+         "400 de Vida",
+         "150% de Regeneración de Vida Básica",
+         "Pasiva - Tripulación de Abordaje: Mientras no haya campeones aliados cerca, obtienes Armadura y Resistencia Mágica, y los ataques infligen daño aumentado contra torres. Los súbditos grandes cercanos obtienen Armadura y Resistencia Mágica, además de daño adicional contra torres.",
+         "Las resistencais de Tripulación de Abordaje decaen a lo largo de 3 seg cuando un aliado se acerca demasiado."
+      ]
+  },
+  {
+      "id":24,
+      "nombre":"Arcoescudo Inmortal",
+      "clase":"Tirador",
+      "precio":3400,
+      "imagen":"https://media.vandal.net/m/9-2021/2021961115879_6.jpg",
+      "descripcion":[
+         "50 de Daño de Ataque",
+         "20% de Velocidad de Ataque",
+         "20% de Probabilidad de Golpe Crítico",
+         "7% de Robo de Vida",
+         "Pasiva - Salvavidas: Al recibir daño que reduciría tu Vida por debajo de un 30%, obtienes un escudo. Además, obtienes daño de ataque.",
+         "Pasiva Mítica: Otorga a todos los otros objetos legendarios Daño de Ataque y Vida adicionales."
+      ]
+  },
+  {
+      "id":25,
+      "nombre":"Fuerza del Viento",
+      "clase":"Tirador",
+      "precio":3400,
+      "imagen":"https://media.vandal.net/m/9-2021/20219611182718_1.jpg",
+      "descripcion":[
+         "60 de Daño de Ataque",
+         "20% de Velocidad de Ataque",
+         "20% de Probabilidad de Golpe Crítico",
+         "Activa - Tromba: Se desplaza a la dirección objetivo y dispara tres misiles al enemigo con menos vida que se encuentre cerca de tu destino. Inflige daño que aumenta contra objetivos con poca vida.",
+         "Pasiva Mítica: Otorga a todos los otros objetos legendarios Velocidad de Movimiento adicional."
+      ]
+  },
+  {
+      "id":26,
+      "nombre":"Matakrakens",
+      "clase":"Tirador",
+      "precio":3400,
+      "imagen":"https://media.vandal.net/m/9-2021/2021961115879_8.jpg",
+      "descripcion":[
+         "65 de Daño de Ataque",
+         "25% de Velocidad de Ataque",
+         "20% de Probabilidad de Golpe Crítico",
+         "Pasiva - Derríbalo: Cada tercer ataque inflige daño verdadero adicional.",
+         "Pasiva Mítica: Otorga a todos los otros objetos legendarios Velocidad de Ataque adicional."
+      ]
+  },
+  {
+      "id":27,
+      "nombre":"La Sanguinaria",
+      "clase":"Tirador",
+      "precio":3400,
+      "imagen":"https://media.vandal.net/m/9-2021/20219313441280_9.jpg",
+      "descripcion":[
+         "55 de Daño de Ataque",
+         "20% de Probabilidad de Golpe Crítico",
+         "18% de Robo de Vida",
+         "Pasiva - Escudo de Icor: El Robo de Vida de ataques ahora te puede sobrecurar. El excedente de vida se almacena como un escudo que decae lentamente si no has infligido o recibido daño."
+      ]
+  },
+  {
+      "id":28,
+      "nombre":"Cuchillas Raudas de Navori",
+      "clase":"Tirador",
+      "precio":3400,
+      "imagen":"https://media.vandal.net/m/9-2021/20219313483379_9.jpg",
+      "descripcion":[
+         "60 de Daño de Ataque",
+         "20% de Probabilidad de Golpe Crítico",
+         "20 de Aceleración de Habilidad",
+         "Pasiva - Trascendencia: Si tienes al menos un 60% de Probabilidad de Golpe Crítico, tus ataques reducen los enfriamentos de tus habilidades básicas.",
+         "Pasiva - Impermanencia: Tus habilidades infligen daño aumentado según tu Probabilidad de Golpe Crítico."
+      ]
+  },
+  {
+      "id":29,
+      "nombre":"Filo del Infinito",
+      "clase":"Tirador",
+      "precio":3400,
+      "imagen":"https://media.vandal.net/m/9-2021/20219313441280_26.jpg",
+      "descripcion":[
+         "70 de Daño de Ataque",
+         "20% de Probabilidad de Golpe Crítico",
+         "Pasiva - Perfección: Obtienes un 35% de Daño de Golpe Crítico si tienes al menos un 60% de Probabilidad de Golpe Crítico."
+      ]
+  },
+  {
+      "id":30,
+      "nombre":"Espada del Rey Arruinado",
+      "clase":"Tirador",
+      "precio":3300,
+      "imagen":"https://media.vandal.net/m/9-2021/20219313441280_8.jpg",
+      "descripcion":[
+         "40 de Daño de Ataque",
+         "25% de Velocidad de Ataque",
+         "8% de Robo de Vida",
+         "Pasiva - Filo Neblina: Los ataques aplican daño físico según la vida actual del objetivo.",
+         "Pasiva - Sifón: Atacar a un campeón 3 veces inflige daño mágico y roba velocidad de movimiento."
+      ]
+  },
+  {
+      "id":31,
+      "nombre":"Al Filo de la Cordura",
+      "clase":"Peleador",
+      "precio":3100,
+      "imagen":"https://media.vandal.net/m/9-2021/20219313514673_15.jpg",
+      "descripcion":[
+         "40 de Daño de Ataque",
+         "40% de Velocidad de Ataque",
+         "40 de Resistencia Mágica",
+         "Pasiva - Fragor: Los ataques aplican daño al impacto y otorgan velocidad de movimiento."
+      ]
+  },
+  {
+      "id":32,
+      "nombre":"Ángel Guardián",
+      "clase":"Tirador",
+      "precio":3000,
+      "imagen":"https://media.vandal.net/m/9-2021/20219313441280_22.jpg",
+      "descripcion":[
+         "45 de Daño de Ataque",
+         "40 de Armadura",
+         "Pasiva - Gracia Salvadora: Tras recibir daño letal, restaura un 50% de Vida básica y un 30% de Maná Máximo después de 4 seg de éstasis (300 seg de Enfriamiento)."
+      ]
+  },
+  {
+      "id":33,
+      "nombre":"Recuerdos de Lord Dominik",
+      "clase":"Tirador",
+      "precio":3000,
+      "imagen":"https://media.vandal.net/m/9-2021/20219313441280_29.jpg",
+      "descripcion":[
+         "30 de Daño de Ataque",
+         "20% de Probabilidad de Golpe Crítico",
+         "30% de Penetración de Armadura",
+         "Pasiva - Verdugo de Gigantes: Inflige daño físico adicional contra campeones con más vida máxima que tú."
+      ]
+  },
+  {
+      "id":34,
+      "nombre":"Cimitarra Mercurial",
+      "clase":"Tirador",
+      "precio":3000,
+      "imagen":"https://media.vandal.net/m/9-2021/20219313483379_3.jpg",
+      "descripcion":[
+         "40 de Daño de Ataque",
+         "20% de Probabilidad de Golpe Crítico",
+         "40 de Resistencia Mágica",
+         "Activa - Capa Mercurial: Elimina todas las debilitaciones de control de masas y gana velocidad de movimiento."
+      ]
+  },
+  {
+      "id":35,
+      "nombre":"El Coleccionista",
+      "clase":"Tirador",
+      "precio":3000,
+      "imagen":"https://media.vandal.net/m/9-2021/20219313514673_8.jpg",
+      "descripcion":[
+         "55 de Daño de Ataque",
+         "20% de Probabilidad de Golpe Crítico",
+         "12 de Letalidad",
+         "Pasiva - Muerte e Impuestos: Infligir daño que dejaría a un campeón enemigo por debajo del 5% de Vida lo ejecuta. Los asesinatos de campeones otorgan 25 de oro adicional."
+      ]
+  },
+  {
+      "id":36,
+      "nombre":"Saqueador de Esencias",
+      "clase":"Tirador",
+      "precio":2800,
+      "imagen":"https://media.vandal.net/m/9-2021/20219313441280_18.jpg",
+      "descripcion":[
+         "45 de Daño de Ataque",
+         "20% de Probabilidad de Golpe Crítico",
+         "20 de Aceleración de Habilidad",
+         "Pasiva - Espada Encantada: Después de usar una habilidad, tu próximo ataque inflige daño adicional y restaura maná."
+      ]
+  },
+  {
+      "id":37,
+      "nombre":"Filo de la Tormenta",
+      "clase":"Tirador",
+      "precio":2700,
+      "imagen":"https://media.vandal.net/m/9-2021/20219313514673_7.jpg",
+      "descripcion":[
+         "45 de Daño de Ataque",
+         "15% de Velocidad de Ataque",
+         "20% de Probabilidad de Golpe Crítico",
+         "Pasiva - Energizado: Moverte y atacar generará un ataque Energizado.",
+         "Pasiva - Paralizar: Tu ataque energizado obtiene daño mágico adicional. Además, los ataques energizados ralentizan a los enemigos."
+      ]
+  },
+  {
+      "id":38,
+      "nombre":"Recordatorio Mortal",
+      "clase":"Tirador",
+      "precio":2600,
+      "imagen":"https://media.vandal.net/m/9-2021/20219313483379_6.jpg",
+      "descripcion":[
+         "35 de Daño de Ataque",
+         "20% de Velocidad de Ataque",
+         "20% de Probabilidad de Golpe Crítico",
+         "7% de Velocidad de Movimiento",
+         "Pasiva - Sepsis: Infligir daño físico aplica un 25% de Heridas Graves a campeones enemigos por 3 seg. Los ataques consecutivos a ese enemigo aumentan el efecto a un 40% de Heridas Graves contra él hasta que deje de transcurrir el efecto.",
+         "Heridas Graves reduce la efectividad de los efectos de curación y regeneración."
+      ]
+  },
+  {
+      "id":39,
+      "nombre":"Bailarín Espectral",
+      "clase":"Tirador",
+      "precio":2600,
+      "imagen":"https://media.vandal.net/m/9-2021/20219313483379_11.jpg",
+      "descripcion":[
+         "20 de Daño de Ataque",
+         "25% de Velocidad de Ataque",
+         "20% de Probabilidad de Golpe Crítico",
+         "7% de Velocidad de Movimiento",
+         "Pasiva - Vals Espectral: Los ataques otorgan Fantasma y las acumulaciones aumentan la velocidad de movimiento. Además, atacar 4 veces hace que Vals Espectral también otorgue velocidad de ataque.",
+         "Las unidades Fantasmas ignoran la colisión con otras unidades."
+      ]
+  },
+  {
+      "id":40,
+      "nombre":"Huracán de Runaan",
+      "clase":"Tirador",
+      "precio":2600,
+      "imagen":"https://media.vandal.net/m/9-2021/20219313483379_17.jpg",
+      "descripcion":[
+         "45% de Velocidad de Ataque",
+         "20% de Probabilidad de Golpe Crítico",
+         "7% de Velocidad de Movimiento",
+         "Pasiva - Furia del Viento: Al atacar, se disparan proyectiles hasta a 2 enemigos cerca del objetivo. Los proyectiles aplican efectos al impacto y pueden asestar golpes críticos."
+      ]
+  },
+  {
+      "id":41,
+      "nombre":"Espadafuria de Guinsoo",
+      "clase":"Tirador",
+      "precio":2600,
+      "imagen":"https://media.vandal.net/m/9-2021/20219313441280_23.jpg",
+      "descripcion":[
+         "45% de Velocidad de Ataque",
+         "20% de Probabilidad de Golpe Crítico",
+         "Pasiva - Ira: Tu probabilidad de golpe crítico se convierte en daño al impacto. Obtienes 40 al impacto por cada 20% de Probabilidad de Golpe Crítico convertido.",
+         "Pasiva - Ataque Furioso: Cada tercer ataque aplica los efectos al impacto dos veces."
+      ]
+  },
+  {
+      "id":42,
+      "nombre":"Cañón de Fuego Rápido",
+      "clase":"Tirador",
+      "precio":2500,
+      "imagen":"https://media.vandal.net/m/9-2021/20219313483379_14.jpg",
+      "descripcion":[
+         "35% de Velocidad de Ataque",
+         "20% de Probabilidad de Golpe Crítico",
+         "7% de Velocidad de Movimiento",
+         "Pasiva - Energizado: Moverte y atacar generará un ataque Energizado.",
+         "Pasiva - Francotirador: Tus ataques energizados infligen daño adicional. Además, los ataques energizados obtienen alcance de ataque adicional."
+      ]
+  }
+]

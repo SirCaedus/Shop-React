@@ -1,18 +1,17 @@
 import { Link } from 'react-router-dom'
 import { Col,Card,Button } from 'react-bootstrap'
-import Placeholder from '../assets/images/Poke Ball.webp'
 
-const Item = ({producto}) => {
+const Item = ({item}) => {
     return (
         <Col>
-            <Card h={100} border='info' text='center' className='marginCard' key={producto.id}>
-                <Card.Img variant='top' src={Placeholder} className='imgSize' alt='placeholder'/>
+            <Card h={100} border='info' text='center' className='marginCard' key={item.id}>
+                <Card.Img variant='top' src={item.imagen} className='imgSize' alt='placeholder'/>
                 <Card.Body>
-                    <Card.Title>{producto.nombre}</Card.Title>
-                    <Card.Text>${producto.precio}</Card.Text>
+                    <Card.Title>{item.nombre}</Card.Title>
+                    <Card.Text>${item.precio}</Card.Text>
                 </Card.Body>
                 <Card.Footer bg='transparent' border='info'>
-                    <Button as={Link} to={'/item/'+producto.id} variant='primary'>ver mas</Button>
+                    <Button as={Link} to={'/item/'+item.id} variant='primary'>ver mas</Button>
                 </Card.Footer>
             </Card>
         </Col>

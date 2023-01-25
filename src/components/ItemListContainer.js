@@ -19,7 +19,7 @@ const ItemListContainer = () => {
                     return productos
                 })
                 .then((productos)=>{
-                    if ((categoria === 'Ball') || (categoria === 'Med')){
+                    if (categoria !== undefined){
                         productos = productos.filter((obj) => obj.clase === categoria) 
                     }
                     setProductos(productos)

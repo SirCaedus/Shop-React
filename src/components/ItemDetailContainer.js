@@ -22,7 +22,9 @@ const ItemDetailContainer = () => {
         .catch((error) =>{
             console.log(error)
         })
+
    },[id])
+   
     return (
         <div>
             <ItemDetail item={item}/>

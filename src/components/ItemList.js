@@ -5,9 +5,9 @@ const ItemList = ({productos}) => {
     return (
         <Container fluid>
             <Row xl={4}>
-                {productos.map((producto) => {
+                {productos.map((item) => {
                     return (
-                        <Item producto={producto} key={producto.id}/>
+                        <Item item={item} key={item.id}/>
                     )
                 })}
             </Row>

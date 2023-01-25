@@ -557,5 +557,263 @@
          "Pasiva - Energizado: Moverte y atacar generará un ataque Energizado.",
          "Pasiva - Francotirador: Tus ataques energizados infligen daño adicional. Además, los ataques energizados obtienen alcance de ataque adicional."
       ]
-  }
+  },
+  {
+      "id":43,
+      "nombre":"Eclipse",
+      "clase":"Asesino",
+      "precio":3100,
+      "imagen":"https://media.vandal.net/m/9-2021/2021961115879_3.jpg",
+      "descripcion":[
+         "60 de Daño de Ataque",
+         "12 de Letalidad",
+         "7% de Omnivampirismo",
+         "Pasiva - Luna Eterna: Impactar a un campeón con 2 ataques o habiliddades diferentes e nun lapso de 1.5 seg inflige daño adicional, te otorga velocidad de movimiento y un escudo.",
+         "Pasiva Mítica: Otorga a todos los otros objetos legendarios Penetración de Armadura y Velocidad de Movimiento adicionales."
+      ]
+  },
+  {
+      "id":44,
+      "nombre":"Garra del Merodeador",
+      "clase":"Asesino",
+      "precio":3100,
+      "imagen":"https://media.vandal.net/m/9-2021/20219611374767_4.jpg",
+      "descripcion":[
+         "60 de Daño de Ataque",
+         "18 de Letalidad",
+         "20 de Aceleración de Habilidad",
+         "Activa - Deslizamiento de Arena: Te desplazas a través del campeón objetivo enemigo y le inflige daño. Infliges daño aumentado al objetivo.",
+         "Pasiva Mítica: Otorga a todos los otros objetos legendarios Letalidad y Velocidad de Movimiento adicionales."
+      ]
+  },
+  {
+      "id":45,
+      "nombre":"Hoja Crepuscular de Draktharr",
+      "clase":"Asesino",
+      "precio":3100,
+      "imagen":"https://media.vandal.net/m/9-2021/2021961115879_2.jpg",
+      "descripcion":[
+         "60 de Daño de Ataque",
+         "18 de Letalidad",
+         "20 de Aceleración de Habilidad",
+         "Pasiva - Acechador Nocturno: Inflige daño adicional al atacar a un campeón. Si un campeón cuerpo a cuerpo lo inflige, el ataque también ralentiza al objetivo. Cuando muere un campeón al que le hayas infligido daño en los últimos 3 seg, este enfriamiento se restablece y te vuelves invisible.",
+         "Pasiva Mítica: Otorga a todos los otros objetos legendarios Aceleración de Habilidad y Velocidad de Movimiento adicionales."
+      ]
+  },
+  {
+      "id":46,
+      "nombre":"Rencor de Serylda",
+      "clase":"Asesino",
+      "precio":3200,
+      "imagen":"https://media.vandal.net/m/9-2021/20219313514673_1.jpg",
+      "descripcion":[
+         "45 de Daño de Ataque",
+         "30% de Penetración de Armadura",
+         "20 de Aceleración de Habilidad",
+         "Pasiva - Frío Implacable: Las habilidades de daño ralentizan a los enemigos."
+      ]
+  },
+  {
+      "id":47,
+      "nombre":"Espada Fantasma de Youmuu",
+      "clase":"Asesino",
+      "precio":3000,
+      "imagen":"https://media.vandal.net/m/9-2021/20219313514673_16.jpg",
+      "descripcion":[
+         "55 de Daño de Ataque",
+         "18 de Letalidad",
+         "15 de Aceleración de Habilidad",
+         "Activa - Paso Espectral: Obtiene velocidad de movimiento y Fantasma.",
+         "Pasiva - Persecución: Otorga velocidad de movimiento fuera de combate.",
+         "Las unidades Fantasmas ignoran la colisión con otras unidades."
+      ]
+  },
+  {
+      "id":48,
+      "nombre":"Arco Axiomático",
+      "clase":"Asesino",
+      "precio":3000,
+      "imagen":"https://media.vandal.net/m/11-2021/2021111710581234_3.jpg",
+      "descripcion":[
+         "55 de Daño de Ataque",
+         "18 de Letalidad",
+         "25 de Aceleración de Habilidad",
+         "Pasiva - Flujo: Cuando un campeón muere en un lapso de 3 seg después de haberle infligido daño, recuperas un 20% del tiempo total de enfriamiento de tu habilidad definitiva."
+      ]
+  },
+  {
+      "id":49,
+      "nombre":"Filo de la Noche",
+      "clase":"Asesino",
+      "precio":2900,
+      "imagen":"https://media.vandal.net/m/9-2021/20219313441280_17.jpg",
+      "descripcion":[
+         "50 de Daño de Ataque",
+         "10 de Letalidad",
+         "325 de Vida",
+         "Pasiva - Anulación: Otorga un Escudo Antihechizos que bloquea la siguiente habilidad del enemigo. El enfriamiento del objeto se reinicia si recibes daño antes de que termine."
+      ]
+  },
+  {
+      "id":50,
+      "nombre":"Colmillo de Serpiente",
+      "clase":"Asesino",
+      "precio":2600,
+      "imagen":"https://media.vandal.net/m/9-2021/20219313483379_20.jpg",
+      "descripcion":[
+         "55 de Daño de Ataque",
+         "12 de Letalidad",
+         "Pasiva - Rompeescudos: Infligir daño a un campeón enemigo reduce cualquier escudo que obtenga. Al infligir daño a un enemigo que no esté bajo los efectos de Rompeescudos, reduce todos los escudos que tenga."
+      ]
+  },
+  {
+      "id":51,
+      "nombre":"Espada de la Penumbra",
+      "clase":"Asesino",
+      "precio":2300,
+      "imagen":"https://media.vandal.net/m/9-2021/20219313514673_11.jpg",
+      "descripcion":[
+         "50 de Daño de Ataque",
+         "10 de Letalidad",
+         "15 de Aceleración de Habilidad",
+         "Pasiva - Apagón: Cuando un centinela enemigo te revela, revelas trampas y deshabilitas centinelas a tu alrededor. Tus ataques matan de forma instantánea a las trampas e infligen el triple de daño a centinelas."
+      ]
+  },
+  {
+      "id":52,
+      "nombre":"Tempestad de Luden",
+      "clase":"Mago",
+      "precio":3200,
+      "imagen":"https://media.vandal.net/m/9-2021/20219611374767_1.jpg",
+      "descripcion":[
+         "80 de Poder de Habilidad",
+         "6 de Penetración de Magia",
+         "600 de Maná",
+         "20 de Aceleración de Habilidad",
+         "Pasiva - Eco: Las habilidades de daño infligen daño mágico al objetivo y a 3 enemigos cercanos y otorgan velociddade movimiento. Infligir daño de habilidad a campeones reduce el enfriamiento de este objeto.",
+         "Pasiva Mítica: Otorga a todos los otros objetos legendarios Penetración Mágica adicional."
+      ]
+  },
+  {
+      "id":53,
+      "nombre":"Angustia de Liandry",
+      "clase":"Mago",
+      "precio":3200,
+      "imagen":"https://media.vandal.net/m/9-2021/2021961115879_9.jpg",
+      "descripcion":[
+         "80 de Poder de Habilidad",
+         "600 de Maná",
+         "20 de Aceleración de Habilidad",
+         "Pasiva - Agonía: Inflige daño mágico adicional a campeones según la vida adicional del objetivo.",
+         "Pasiva - Tormento: Infligir daño con habilidades quema a los enemigos a lo largo del tiempo.",
+         "Pasiva Mítica: Otorga a todos los otros objetos legendarios Aceleración de Habilidad adicional."
+      ]
+  },
+  {
+      "id":54,
+      "nombre":"Cosechador Oscuro",
+      "clase":"Mago",
+      "precio":3200,
+      "imagen":"https://media.vandal.net/m/9-2021/20219611374767_3.jpg",
+      "descripcion":[
+         "90 de Poder de Habilidad",
+         "300 de Vida",
+         "25 de Aceleración de Habilidad",
+         "Pasiva - Desgarraalmas: Infligir daño a un campeón inflige daño mágico adicional y te otorga velocidad de movimiento.",
+         "Pasiva Mítica: Otorga a todos los otros objetos legendarios Aceleración de Habilidad adicional."
+      ]
+  },
+  {
+      "id":55,
+      "nombre":"Agrietador",
+      "clase":"Mago",
+      "precio":3200,
+      "imagen":"https://media.vandal.net/m/9-2021/20219611374767_5.jpg",
+      "descripcion":[
+         "70 de Poder de Habilidad",
+         "300 de Vida",
+         "15 de Aceleración de Habilidad",
+         "7% de Omnivampirismo",
+         "Pasiva - Corrupción del Vacío: Por cada segundo de infligir daño a campeones enemigos, inflige daño adicional. Al tener el máximo de fuerza, el daño adicional se inflige como daño verdadero.",
+         "Pasiva Mítica: Otorga a todos los otros objetos legendarios Omnivampirismo y Poder de Habilidad adicionales."
+      ]
+  },
+  {
+      "id":56,
+      "nombre":"Cinturón Cohete Hextech",
+      "clase":"Mago",
+      "precio":3200,
+      "imagen":"https://media.vandal.net/m/9-2021/20219611182718_3.jpg",
+      "descripcion":[
+         "90 de Poder de Habilidad",
+         "6 de Penetración de Magia",
+         "250 de Vida",
+         "15 de Aceleración de Habilidad",
+         "Activa - Supersónico: Te desplazas en la dirección objetivo y liberas un arco de misiles mágicos que infligen daño, Luego, obtienes velocidad de movimiento hacia campeones enemigos.",
+         "Pasiva Mítica: Otorga a todos los otros objetos legendarios Penetración Mágica adicional."
+      ]
+  },
+  {
+      "id":57,
+      "nombre":"Sombrero Mortífero de Rabadon",
+      "clase":"Mago",
+      "precio":3600,
+      "imagen":"https://media.vandal.net/m/9-2021/20219313483379_12.jpg",
+      "descripcion":[
+         "120 de Poder de Habilidad",
+         "Pasiva - Opus Mágico: Aumenta tu Poder de Habilidad total en un 35%."
+      ]  
+  },
+  {
+      "id":58,
+      "nombre":"Impulso Cósmico",
+      "clase":"Mago",
+      "precio":3000,
+      "imagen":"https://media.vandal.net/m/9-2021/20219313441280_13.jpg",
+      "descripcion":[
+         "65 de Poder de Habilidad",
+         "200 de Vida",
+         "30 de Aceleración de Habilidad","5% de Velocidad de Movimiento","Pasiva - Danza de Hechizos: Infligir daño a un campeón con 3 ataques o hechizos separados otorga velocidad de movimiento y poder de habilidad hasta salir del combate con un campeón."
+      ]
+  },
+  {"id":59,"nombre":"Abrazo Demoníaco","clase":"Mago","precio":3000,"imagen":"https://media.vandal.net/m/9-2021/20219313441280_16.jpg","descripcion":["75 de Poder de Habilidad","350 de Vida","Pasiva - Mirada de Azakana: Infligir daño con habilidades quema a los enemigos por su vida máxima como daño mágico por cada segundo.","Pasiva - Pacto Oscuro: Obtienes poder de habilidad según un porcentaje de tu vida adicional."]},
+  {"id":60,"nombre":"Maldición del Liche","clase":"Mago","precio":3000,"imagen":"https://media.vandal.net/m/9-2021/20219313441280_28.jpg","descripcion":["75 de Poder de Habilidad","15 de Aceleración de Habilidad","8% de Velocidad de Movimiento","Pasiva - Espada Encantada: Después de usar una habilidad, tu próximo ataque recibe una mejora de daño mágico adicional."]},
+  {"id":61,"nombre":"Reloj de Arena de Zhonya","clase":"Mago","precio":3000,"imagen":"https://media.vandal.net/m/9-2021/20219313514673_18.jpg","descripcion":["80 de Poder de Habilidad","45 de Armadura","15 de Aceleración de Habilidad","Activa - Éstasis: Te vuelves invulnerable e inalcanzable durante 2.5 seg, pero no puedes realizar ninguna otra acción durante ese tiempo."]},
+  {"id":62,"nombre":"Lumbría","clase":"Mago","precio":3000,"imagen":"https://media.vandal.net/m/11-2021/2021111710581234_4.jpg","descripcion":["100 de Poder de Habilidad","200 de Vida","Pasiva - Flor de Ceniza: El daño a campeones se beneficia de Penetración de Magia adicional, según la vida actual del objetivo. Otorga el beneficio máximo contra el objetivo si este recibió un escudo recientemente."]},
+  {"id":63,"nombre":"Enfoque al Horizonte","clase":"Mago","precio":3000,"imagen":"https://media.vandal.net/m/9-2021/20219313441280_24.jpg","descripcion":["100 de Poder de Habilidad","150 de Vida","15 de Aceleración de Habilidad","Pasiva - Hiperdisparo: Infligir daño a un campeón con una habilidad sin fijación de objetivo a 700 de alcance, o ralentizarlo, o inmovilizarlo lo revela y aumenta el ddaño que recibe de ti."]},
+  {"id":64,"nombre":"Diente de Nashor","clase":"Mago","precio":3000,"imagen":"https://media.vandal.net/m/9-2021/20219313483379_8.jpg","descripcion":["100 de Poder de Habilidad","50% de Velocidad de Ataque","Pasiva - Mordida de Icathia: Los ataques aplican daño mágico al impacto."]},
+  {"id":65,"nombre":"Báculo del Arcángel","clase":"Mago","precio":3000,"imagen":"https://media.vandal.net/m/9-2021/20219313441280_3.jpg","descripcion":["80 de Poder de Habilidad","500 de Maná","200 de Vida","10 de Aceleración de Habilidad","Pasiva - Asombro: Otorga poder de habilidad igual a un porcentaje del maná adicional.","Pasiva - Carga de Maná: Impacta a un objetivo con una habilidad o ataque para consumir una carga y obtener 3 de Maná adicional, que se duplica si el objetivo es un campeón. Otorga un Máximo de 360 de Maná. Obtienes una Carga de Maná cada 8 seg."]},
+  {"id":66,"nombre":"Báculo del Vacío","clase":"Mago","precio":2800,"imagen":"https://media.vandal.net/m/9-2021/20219313514673_13.jpg","descripcion":["65 de Poder de Habilidad","40% de Penetración de Magia"]},
+  {"id":67,"nombre":"Cetro de Cristal de Rylai","clase":"Mago","precio":2600,"imagen":"https://media.vandal.net/m/9-2021/20219313483379_18.jpg","descripcion":["75 de Poder de Habilidad","400 de Vida","Pasiva - Hielo Escarchado: Las habilidades de daño ralentizan a los enemigos."]},
+  {"id":68,"nombre":"Velo de la Banshee","clase":"Mago","precio":2600,"imagen":"https://media.vandal.net/m/9-2021/20219313441280_5.jpg","descripcion":["80 de Poder de Habilidad","45 de Resistencia Mágica","10 de Aceleración de Habilidad","Pasiva - Anulación: Otorga un Escudo Antihechizos que bloquea la siguiente habilidad del enemigo. El enfriamiento del objeto se reinicia si recibes daño antes de que termine."]},
+  {"id":69,"nombre":"Morellonomicón","clase":"Mago","precio":2500,"imagen":"https://media.vandal.net/m/9-2021/20219313483379_5.jpg","descripcion":["90 de Poder de Habilidad","300 de Vida","Pasiva - Aflicción: Infligir daño mágico aplica un 25% de Heridas Graves a campeones enemigos durante 3 seg. Si el objetivo está por debajo del 50% de Vida, este efecto aumenta a un 40%. Heridas Graves reduce la efectividad de los efectos de curación y regeneración"]},
+  {"id":70,"nombre":"Robaalmas de Mejai","clase":"Mago","precio":1600,"imagen":"https://media.vandal.net/m/9-2021/20219313483379_2.jpg","descripcion":["20 de Poder de Habilidad","100 de Vida","Pasiva - Gloria: Obtienes 4 acumulaciones por asesinato de campeón o 2 acumulaciones por asistencia, hasta un total de 25 acumulaciones. Pierdes 10 acumulaciones al morir.","Pasiva - Pavor: Otorga 5 de Poder de Habilidad por cada acumulación de Gloria. Obtienes un 105 de Velocidad de Movimiento si tienes al menos 10 acumulaciones."]},
+  {"id":71,"nombre":"Corazón de Acero","clase":"Tanque","precio":3200,"imagen":"https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltacf13441476402a6/636c6feb173c53758cc79113/111522_Patch_12_22_Notes_Heartsteel.png","descripcion":["800 de Vida","200% de Regeneración de Vida Básica","20 de Aceleración de Habilidad","Pasiva - Consumo Colosal: Cargas un ataque poderoso contra un campeón por más de 3 seg mientras se esté dentro de 700 de alcance de él. El ataque cargado inflige daño físico adicional según tu Vida Máxima, y te otorga un porcentaje de ese daño como Vida Máxima permanente.","Pasiva Mítica: Otorga a todos los otros objetos legendarios Vida y Tamaño de Campeón adicionales."]},
+  {"id":72,"nombre":"Jak'Sho, el Proteico","clase":"Tanque","precio":3200,"imagen":"https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blte7d57bc022de7d07/636c6feb9445c550cc51a9f8/111522_Patch_12_22_Notes_Jak_Sho.png","descripcion":["400 de Vida","30 de Armadura","30 de Resistencia Mágica","20 de Aceleración de Habilidad","Pasiva - Resistencia del Vacío: Por cada seg en combate contra campeones, obtienes una acumulación de Armadura y Resistencia Mágica adicionales, con un máximo de 8 acumulaciones. Al llegar al máximo de acumulaciones se potencia, infligiendo a los enemigos cercanos daño mágico, te cura por esa cantidad, y aumenta las resistencias adicionales hasta el final del combate.","Pasiva Mítica: Otorga a todos los otros objetos legendarios Armadura y Resistencia Mágica adicionales."]},
+  {"id":73,"nombre":"Guantelete del Hijo del Hielo","clase":"Tanque","precio":3000,"imagen":"https://media.vandal.net/m/9-2021/2021961115879_5.jpg","descripcion":["400 de Vida","50 de Armadura","20 de Aceleración de Habilidad","Pasiva - Espada Encantada: Después de usar una habilidad, tu próximo ataque recibe una mejora de daño adicional y crea un campo congelado por 2.5 seg. Los enemigos que se muevan a través del campo quedan ralentizados. El objetivo principal queda incapacitado, aplicándole un 100% de ralentización adicional y reduciendo su daño contra ti por 2.5 seg.","Pasiva Mítica: Otorga a todos los otros objetos legendarios Vida, Tenacidad y Resistencia a Ralentizaciones adicionales."]},
+  {"id":74,"nombre":"Virtud Radiante","clase":"Tanque","precio":3000,"imagen":"https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt94278793f247d8fa/636c7000e6c581116eff4aa9/111522_Patch_12_22_Notes_RadiantVirtue.png","descripcion":["400 de Vida","30 de Armadura","30 de Resistencia Mágica","20 de Aceleración de Habilidad","Pasiva - Luz Guía: Trasciendes al lanzar una definitiva, lo que aumenta tu Vida Máxima por 9 seg. Al estar bajo el efecto de Trascendencia, tú y tus aliados a una distancia de 1200 de ti obtienen Aceleración de Habilidad y se curan por un porcentaje de tu Vida Máxima cada 3 seg, que aumenta hasta un 100% según la vida faltante del campeón.","Pasiva Mítica: Otorga a todos los otros objetos legendarios Vida adicional."]},
+  {"id":75,"nombre":"Armadura Pétrea","clase":"Tanque","precio":3200,"imagen":"https://media.vandal.net/m/9-2021/20219313441280_21.jpg","descripcion":["60 de Armadura","60 de Resistencia Mágica","15 de Aceleración de Habilidad","Activa - Inquebrantable: Obtiene un escudo que decae, y creces en tamaño.","Pasiva - Fortificación: Recibir daño dde un campeón otorga una acumulación de armadura y resistencia mágica adicionales. Máximo 5 acumulaciones, 1 por campeón."]},
+  {"id":76,"nombre":"Presagio de Randuin","clase":"Tanque","precio":3000,"imagen":"https://media.vandal.net/m/9-2021/20219313483379_13.jpg","descripcion":["400 de Vida","60 de Armadura","Activa - Humilidad: Ralentiza a los enemigos cercanos.","Pasiva - Duro como Piedra: Reduce el daño proveniente de ataques.","Pasiva - Resiliencia crítica: Los golpes críticos te infligen un 20% menos de daño."]},
+  {"id":77,"nombre":"Armadura de Warmog","clase":"Tanque","precio":3000,"imagen":"https://media.vandal.net/m/9-2021/20219313514673_14.jpg","descripcion":["800 de Vida","10 de Aceleración de Habilidad","200% de Regeneración de Vida Básica","Pasiva - Corazón de Warmog: Si tienes al menos 1100 de Vida adicional, regeneras un porcentaje de tu Vida Máxima por segundo si no has recibido daño en los últimos 6 seg."]},
+  {"id":78,"nombre":"Máscara Abisal","clase":"Tanque","precio":3000,"imagen":"https://media.vandal.net/m/9-2021/20219313441280_1.jpg","descripcion":["500 de Vida","300 de Maná","40 de Resistencia Mágica","10 de Aceleración de Habilidad","Pasiva - Eternidad: Restaura Maná igual a un porcentaje del daño recibido de campeones antes de la mitigación y restaura Vida igual a un porcentaje del Maná utilizado.","Pasiva - Deshacer: Maldice a los campeones enemigos cercanos, lo que reduce su Resistencia Mágica. Por cada enemigo Maldito, obtienes Resistencia Mágica adicional."]},
+  {"id":79,"nombre":"Placa del Hombre Muerto","clase":"Tanque","precio":2900,"imagen":"https://media.vandal.net/m/9-2021/20219313441280_14.jpg","descripcion":["300 de Vida","45 de Armadura","5% de Velocidad de Movimiento","Pasiva - Hunderbarcos: Mientras te mueves, acumulas velocidad de movimiento. Tu próximo ataque libera la velocidad de movimiento acumulada para infligir daño. Si un campeón cuerpo a cuerpo lo lanza a la máxima velocidad, el ataque también ralentiza al objetivo."]},
+  {"id":80,"nombre":"Fuerza de la Naturaleza","clase":"Tanque","precio":2900,"imagen":"https://media.vandal.net/m/9-2021/20219313441280_19.jpg","descripcion":["350 de Vida","70 de Resistencia Mágica","5% de Velocidad de Movimiento","Pasiva - Absorber: Al recibir daño mágico de campeones enemigos, obtienes una acumulación de Firmeza. Los efectos de inmovilización de enemigos otorgan acumulaciones adicionales.","Pasiva - Disipar: Al alcanzar las acumulaciones máximas de Firmeza, recibes daño mágico reducido y velocidad de movimiento aumentada."]},
+  {"id":81,"nombre":"Apariencia Espiritual","clase":"Tanque","precio":2900,"imagen":"https://media.vandal.net/m/9-2021/20219313514673_4.jpg","descripcion":["450 de Vida","50 de Resistencia Mágica","10 de Aceleración de Habilidad","100% de Regeneración de Vida Básica","Pasiva - Vitalidad Ilimitada: Aumenta la eficacia de todas las curaciones y los escudos sobre ti."]},
+  {"id":82,"nombre":"Quimotanque Turbo","clase":"Tanque","precio":2800,"imagen":"https://media.vandal.net/m/9-2021/20219611374767_10.jpg","descripcion":["500 de Vida","50 de Resistencia Mágica","10 de Aceleración de Habilidad","Activa - Supercarga: Otorga velocidad de movimiento al moverse hacia los enemigos o las torretas enemigas. Al acercarte a un enemigo (o luego de 4 seg), emite una onda de choque que ralentiza a los campeones cercanos."]},
+  {"id":83,"nombre":"Égida de Fuego Solar","clase":"Tanque","precio":2700,"imagen":"https://media.vandal.net/m/9-2021/20219611374767_8.jpg","descripcion":["500 de Vida","50 de Armadura","Pasiva - Inmolar: Recibir o infligir daño provoca que comiences a infligir daño mágico por seg a los enemigos cercanos durante 3 seg. Infligir daño a campeones o monstruos épicos con este efecto agrega una acumulación, lo que aumenta el daño del siguiente Inmolar por 5 seg, con un máximo de 6 acumulaciones."]},
+  {"id":84,"nombre":"Cota de Espinas","clase":"Tanque","precio":2700,"imagen":"https://media.vandal.net/m/9-2021/20219313514673_9.jpg","descripcion":["350 de Vida","60 de Armadura","Pasiva - Espinas: Recibir un ataque refleja daño al atacante y aplica un 25% de Heridas Graves si es un campeón. Inmovilizar campeones enemigos también aplica un 40% de Heridas Graves. Heridas Graves reduce la efectividad de los efectos de curación y regeneración."]},
+  {"id":85,"nombre":"Corazón de Hielo","clase":"Tanque","precio":2700,"imagen":"https://media.vandal.net/m/9-2021/20219313441280_20.jpg","descripcion":["90 de Armadura","400 de Maná","20 de Aceleración de Habilidad","Pasiva - Caricia Invernal: Reduce la velocidad de ataque de los enemigos cercanos.","Pasiva - Duro como Piedra: Reduce el daño proveniente de ataques."]},
+  {"id":86,"nombre":"Umbral del Invierno","clase":"Tanque","precio":2600,"imagen":"https://media.vandal.net/m/11-2021/2021111710581234_5.jpg","descripcion":["400 de Vida","500 de Maná","15 de Aceleración de Habilidad","Pasiva - Asombro: Obtienes vida adicional igual a tu Maná total.","Pasiva - Carga de Maná: Impacta a un objetivo con una habilidad o ataque para consumir una carga y obtener 3 de Maná adicional, que se duplica si el objetivo es un campeón. Otorga un Máximo de 360 de Maná. Obtienes una Carga de Maná cada 8 seg."]},
+  {"id":87,"nombre":"Cadenas de Anatema","clase":"Tanque","precio":2500,"imagen":"https://media.vandal.net/m/9-2021/20219313441280_2.jpg","descripcion":["650 de Vida","20 de Aceleración de Habilidad","Activa - Promesa: Selecciona un Némesis para comenzar a crear una Vendetta.","Pasiva - Vendetta: Recibe daño reducido de tu Némesis, el cual aumenta por cada acumulación de Vendetta. Obtienes acumulaciones con el tiempo y alcanzas el máximo de acumulaciones tras 60 seg. Al tener el máximo dde acumulaciones, tu Némesis tiene Tenacidad reducida al estar cerca de ti."]},
+  {"id":88,"nombre":"Relicario de los Solari de Hierro","clase":"Soporte","precio":2500,"imagen":"https://media.vandal.net/m/9-2021/2021961115879_10.jpg","descripcion":["200 de Vida","20 de Aceleración de Habilidad","30 de Armadura","30 de Resistencia Mágica","Activa - Devoción: Otorga un escudo a los aliados cercanos que decae con el tiempo.","Pasiva - Consagrar: Otorga Armadura y Resistencia Mágica a los campeones cercanos.","Pasiva Mítica: Todos los otros objetos legendarios aumentan la Armadura y Resistencia mágica adicionales de Consagrar."]},
+  {"id":89,"nombre":"Renovador de Piedra Lunar","clase":"Soporte","precio":2500,"imagen":"https://media.vandal.net/m/9-2021/20219611374767_2.jpg","descripcion":["40 de Poder de Habilidad","200 de Vida","20 de Aceleración de Habilidad","100% de Regeneración de Maná Básica","Pasiva - Gracia Estrellada: Al afectar a campeones con ataques o habilidades en combate, restaura vida al aliado cercano más herido. Tu poder de curaciones y escudos aumenta por cada segundo en combate contra campeones.","Pasiva Mítica: Todos los otros objetos legendarios aumentan la Curación de Gracia Estrellada."]},
+  {"id":90,"nombre":"Mandato Imperial","clase":"Soporte","precio":2500,"imagen":"https://media.vandal.net/m/9-2021/2021961115879_7.jpg","descripcion":["40 de Poder de Habilidad","200 de Vida","20 de Aceleración de Habilidad","100% de Regeneración de Maná Básica","Pasiva - Fuego Coordinado: Las habilidades que ralentizan o inmovilizan a un campeón infligen daño adicional y lo marcan. El daño infligido por un campeón aliado detona la marca, lo que inflige daño adicional y les otorga velocidad de movimiento a ambos.","Pasiva Mítica: Otorga a todos los otros objetos legendarios Poder de Habilidad adicional."]},
+  {"id":91,"nombre":"Canto de Guerra de Shurelya","clase":"Soporte","precio":2500,"imagen":"https://media.vandal.net/m/9-2021/20219611374767_6.jpg","descripcion":["40 de Poder de Habilidad","200 de Vida","20 de Aceleración de Habilidad","100% de Regeneración de Maná Básica","Activa - Inspiración: Otorga velocidad de movimiento a los aliados cercanos.","Pasiva - Motivación: Potenciar o proteger a otro campeón aliado les otorga velocidad de movimiento a los dos.","Pasiva Mítica: Otorga a todos los otros objetos legendarios Aceleración de Habilidad adicional."]},
+  {"id":92,"nombre":"Convergencia de Zeke","clase":"Soporte","precio":2400,"imagen":"https://media.vandal.net/m/9-2021/20219313514673_17.jpg","descripcion":["250 de Vida","35 de Armadura","250 de Maná","20 de Aceleración de Habilidad","Activa - Conducto: Designa a un Cómplice.","Pasiva - Convergencia: Luego de inmovilizar a un enemigo, los ataques e impactos de habilidad de tu Cómplice infligen daño adicional a ese enemigo."]},
+  {"id":93,"nombre":"Promesa del Caballero","clase":"Soporte","precio":2300,"imagen":"https://media.vandal.net/m/9-2021/20219313441280_27.jpg","descripcion":["400 de Vida","20 de Aceleración de Habilidad","200% de Regeneración de Vida Básica","Activa - Juramento: Designa a un aliado digno.","Pasiva - Sacrificio: Mientras tu aliado digno esté cerca, redirige el daño que tu aliado recibe hacia ti y cura según el daño que inflige tu aliado digno a los campeones."]},
+  {"id":94,"nombre":"Redención","clase":"Soporte","precio":2300,"imagen":"https://media.vandal.net/m/9-2021/20219313483379_16.jpg","descripcion":["16% de Poder de Curaciones y Escudos","200 de Vida","15 de Aceleración de Habilidad","100% de Regeneración de Maná Básica","Activa - Intervención: Selecciona un área dentro del alcance. Tras 2.5 seg, invoca un destello e luz para recuperar vida a campeones aliados e infligir daño a los campeones enemigos. Puedes activar el objeto aunque hayas muerto."]},
+  {"id":95,"nombre":"Bendición de Mikael","clase":"Soporte","precio":2300,"imagen":"https://media.vandal.net/m/9-2021/20219313483379_4.jpg","descripcion":["16% de Poder de Curaciones y Escudos","50 de Resistencia Mágica","15 de Aceleración de Habilidad","100% de Regeneración de Maná Básica","Activa - Purificación: Restaura vida y elimina todas las debilitaciones de control de masas de un campeón aliado (excepto los lanzamientos por el aire y las supresiones)."]},
+  {"id":96,"nombre":"Báculo de Agua Fluyente","clase":"Soporte","precio":2300,"imagen":"https://media.vandal.net/m/9-2021/20219313514673_5.jpg","descripcion":["50 de Poder de Habilidad","8% de Poder de Curaciones y Escudos","100% de Regeneración de Maná Básica","Pasiva - Rápidos: Curar o escudar a otro aliado les otorga Poder de Habilidad y Aceleración de Habilidad a ambos."]},
+  {"id":97,"nombre":"Putrificador Quimtech","clase":"Soporte","precio":2300,"imagen":"https://media.vandal.net/m/9-2021/20219313441280_12.jpg","descripcion":["60 de Poder de Habilidad","20 de Aceleración de Habilidad","100% de Regeneración de Maná Básica","Pasiva - Toxina Fúngica: Infligir daño mágico aplica un 25% de Heridas Graves a campeones durante 3 seg. Curar o escudar a otro aliado los mejorará a ambos, lo que hará que el próximo daño contra campeones enemigos aplique un 40% de Heridas Graves.  Heridas Graves reduce la efectividad de los efectos de curación y regeneración."]},
+  {"id":98,"nombre":"Pebetero Ardiente","clase":"Soporte","precio":2300,"imagen":"https://media.vandal.net/m/9-2021/20219313441280_4.jpg","descripcion":["60 de Poder de Habilidad","8% de Poder de Curaciones y Escudos","100% de Regeneración de Maná Básica","Pasiva - Santificación: Curar o escudar a otro aliado les otorga a ambos mejoras de Velocidad de Ataque y daño mágico al impacto."]}
 ]

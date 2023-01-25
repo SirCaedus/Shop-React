@@ -1,7 +1,8 @@
 import { useEffect,useState } from 'react'
 import { useParams } from 'react-router-dom'
+import { collection , getDocs } from 'firebase/firestore'
+import { db } from './FireBase'
 import ItemList from './ItemList'
-import Stock from './datalol'
 
 const ItemListContainer = () => {
 
@@ -10,19 +11,23 @@ const ItemListContainer = () => {
     const [productos,setProductos] = useState([])
 
     useEffect( () =>{
-
-        const stock = fetch(Stock)
+        const productosCollection = collection(db,"items")
+        const stock = getDocs(productosCollection)
 
             stock
                 .then((respuesta) =>{
-                    const productos = Stock
-                    return productos
+                    const productos = respuesta
+                    const array = []
+                    productos.forEach((doc)=>{
+                        array.push({id:doc.id,nombre:doc.get('nombre'),imagen:doc.get('imagen'),clase:doc.get('clase'),descripcion:doc.get('descripcion'),precio:doc.get('precio')})
+                    })
+                    return array
                 })
-                .then((productos)=>{
+                .then((array)=>{
                     if (categoria !== undefined){
-                        productos = productos.filter((obj) => obj.clase === categoria) 
+                        array = array.filter((obj) => obj.clase === categoria) 
                     }
-                    setProductos(productos)
+                    setProductos(array)
                     setCarga(true)
                 })
                 .catch((error) =>{

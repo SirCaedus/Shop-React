@@ -1,4 +1,5 @@
 import { Container,Row } from 'react-bootstrap'
+import { db } from './FireBase'
 import Item from './Item'
 
 const ItemList = ({productos}) => {

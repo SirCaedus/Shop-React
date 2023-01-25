@@ -3,37 +3,30 @@ body{
   padding: 0;
 }
 
-.logo {width: 6rem; }
+.logo{
+  width: 6rem; 
+}
 
-a:link, a:visited, a:active {text-decoration:none;}
+a:link, a:visited, a:active{
+  text-decoration:none;
+}
 
 .btnNav:hover{
   background-color: aqua;
   border-radius: 3rem;
   transition: all .2s ease-in-out;
+  
 }
 
-.btnNav:active {transform: scale(0.8);}
+.btnNav:active{
+  transform: scale(0.8);
+}
 
 .btnNav img:hover{
   animation-name: animacion;
   animation-timing-function: ease-in-out;
   animation-duration: 2s;
 }
-
-.imgSize{
-  width: 80%;
-  aspect-ratio: 3/2; 
-  object-fit: contain;
-  margin: 0 auto;
-}
-
-.imgDetail{
-  display: flex;
-  width:50%;
-}
-
-.marginCard {margin: 1.5rem;}
 
 @keyframes animacion{
   20%{transform: rotate(25deg)}
@@ -44,5 +37,7 @@ a:link, a:visited, a:active {text-decoration:none;}
 }
 
 @media (min-width: 1200px){
-  .logo {width:10rem;}
+  .logo{
+    width:10rem;
+  }
 } 

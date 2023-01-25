@@ -1,5 +1,5 @@
-import { Container,Col,Navbar,Nav } from 'react-bootstrap'
-import { Link,NavLink } from 'react-router-dom'
+import {Container,Col,Navbar,Nav} from 'react-bootstrap'
+import {Link,NavLink} from 'react-router-dom'
 import Logo from '../assets/images/logo.png'
 import Ball from '../assets/images/ball_icon.png'
 import Meds from '../assets/images/med_icon.png'
@@ -30,4 +30,4 @@ const NavBar = () => {
     )
 }
 
-export default NavBar
+export default NavBar;

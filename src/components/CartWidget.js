@@ -1,4 +1,5 @@
-import { Col,Nav } from 'react-bootstrap'
+import Col from 'react-bootstrap/Col'
+import Nav from 'react-bootstrap/Nav'
 import Cart from '../assets/images/carrito.png'
 
 const CartWidget = () => {

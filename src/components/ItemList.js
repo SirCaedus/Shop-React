@@ -1,17 +1,14 @@
-import { Container,Row } from 'react-bootstrap'
-import Item from './Item'
+import Item from './Item.js'
 
 const ItemList = ({productos}) => {
     return (
-        <Container fluid>
-            <Row xl={4}>
-                {productos.map((producto) => {
-                    return (
-                        <Item producto={producto} key={producto.id}/>
-                    )
-                })}
-            </Row>
-        </Container>
+        <div>
+            {productos.map((producto) => {
+                return (
+                    <Item producto={producto} key={producto.id}/>
+                )
+            })}
+        </div>
     )
 }
 

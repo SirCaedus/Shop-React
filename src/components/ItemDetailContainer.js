@@ -1,32 +1,32 @@
-import { Container,Col,Row,Button } from 'react-bootstrap'
-import Placeholder from '../assets/images/Poke Ball.webp'
+import { useEffect,useState } from 'react'
+import { useParams } from 'react-router-dom'
+import ItemDetail from './ItemDetail'
+import Stock from './datalol.json'
 
-const ItemDetailContainer = ({productos}) => {
+const ItemDetailContainer = () => {
+   
+   const {id} = useParams()
+   const [item,setItem] = useState({})
+   
+   useEffect( () =>{
+        const stock = fetch(Stock)
+        stock
+        .then((respuesta) =>{
+            const productos = Stock
+            return productos
+        })
+        .then((productos)=>{
+            const itemFind = productos.find((obj) => obj.id === parseInt(id))
+            setItem(itemFind)
+        })
+        .catch((error) =>{
+            console.log(error)
+        })
+   },[id])
     return (
-        <Container>
-            <Row>
-                <Col sm={4}>
-                    <img src={productos.imagen} className='imgDetail' alt={productos.nombre}/>
-                </Col>
-                <Col sm={8}>
-                    <Row>
-                        <h2>{productos.nombre}</h2>
-                    </Row>
-                    <Row>
-                        clase: {productos.clase}
-                    </Row>
-                    <Row>
-                        {productos.descripcion}
-                    </Row>
-                    <Row>
-                        ${productos.precio}
-                    </Row>
-                    <Row>
-                        <Button variant='primary'>Comprar</Button>
-                    </Row>
-                </Col>
-            </Row>
-      </Container>
+        <div>
+            <ItemDetail item={item}/>
+        </div>
     )
 }
 

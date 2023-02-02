@@ -1,11 +1,11 @@
-import Col from 'react-bootstrap/Col'
-import Nav from 'react-bootstrap/Nav'
+import { NavLink } from 'react-router-dom'
+import { Col,Nav } from 'react-bootstrap'
 import Cart from '../assets/images/carrito.png'
 
 const CartWidget = () => {
     return(
         <Col  className='justify-content-end d-flex'>
-            <Nav.Link>
+            <Nav.Link as={NavLink} to='/cart'>
                 <span>0</span>
                 <img src={Cart} alt='imagen Carrito'/>
             </Nav.Link>

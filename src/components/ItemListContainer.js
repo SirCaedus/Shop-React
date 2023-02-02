@@ -1,47 +1,46 @@
 import { useEffect,useState } from 'react'
-import {useParams} from 'react-router-dom'
+import { useParams } from 'react-router-dom'
+import { collection , getDocs, query, where } from 'firebase/firestore'
+import { db } from './Firebase'
 import ItemList from './ItemList'
-import Stock from './data.json'
-
-
 
 const ItemListContainer = () => {
 
-    const {categoria,id} = useParams()
-    const [carga,setCarga] = useState()
-    const [productos,setProductos] = useState([])
-    useEffect( () =>{
+    const {categoria} = useParams()
+    const [carga, setCarga] = useState(false)
+    const [productos, setProductos] = useState([])
+  
+    useEffect(() => {
+        const productosCollection = collection(db, "items")
+        let filtro
+  
+        if (categoria) {
+          filtro = query(productosCollection, where("clase", "==", categoria))
+        } else {
+          filtro = productosCollection
+        }
+  
+        const stock = getDocs(filtro)
+          stock
+            .then((respuesta)=>{
+                const productos = respuesta.docs.map(doc => ({
+                    ...doc.data(),
+                    id: doc.id
+                }))
+                setProductos(productos)
+                setCarga(true)
+            })
+            .catch((error) =>{
+                console.log(error)
+            }) 
 
-        const stock = fetch(Stock)
-
-            stock
-                .then((respuesta) =>{
-                    const productos = Stock
-                    return productos
-                })
-                .then((productos)=>{
-                    if ((categoria === 'Ball') || (categoria === 'Med')){
-                        productos = productos.filter((obj) => obj.clase === categoria) 
-                    }
-                    setProductos(productos)
-                    setCarga(true)
-                })
-                .catch((error) =>{
-                    console.log(error)
-                })
-
-
-
-   },[categoria])
+    }, [categoria])
 
    return (
-        <div>
-            {carga ? 'CARGADOS' : 'Cargando...'}
-            <ItemList productos={productos}/>
-        </div>
-   )
-
-
+        <>
+        {carga ? <ItemList productos={productos}/> : 'Cargando...'}
+        </>
+    )
 }
 
 export default ItemListContainer

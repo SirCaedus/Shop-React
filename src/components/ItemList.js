@@ -2,13 +2,15 @@ import Item from './Item.js'
 
 const ItemList = ({productos}) => {
     return (
-        <div>
-            {productos.map((producto) => {
-                return (
-                    <Item producto={producto} key={producto.id}/>
-                )
-            })}
-        </div>
+        <Container fluid>
+            <Row xl={4}>
+                {productos.map((item) => {
+                    return (
+                        <Item item={item} key={item.id}/>
+                    )
+                })}
+            </Row>
+        </Container>
     )
 }
 

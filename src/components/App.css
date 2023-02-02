@@ -28,6 +28,22 @@ a:link, a:visited, a:active{
   animation-duration: 2s;
 }
 
+.imgSize{
+  width: 80%;
+  aspect-ratio: 3/2; 
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.imgDetail{
+  display: flex;
+  width:50%;
+}
+
+.marginCard {
+  margin: 1.5rem;
+}
+
 @keyframes animacion{
   20%{transform: rotate(25deg)}
   40%{transform: rotate(-25deg)}

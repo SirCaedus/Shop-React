@@ -1,8 +1,9 @@
-import './App.css'
-import 'bootstrap/dist/css/bootstrap.min.css'
 import { BrowserRouter } from 'react-router-dom'
 import NavBar from './NavBar'
 import Main from './Main'
+import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
+
 
 function App() {
   return (
@@ -13,4 +14,4 @@ function App() {
   )
 }
 
-export default App;
+export default App

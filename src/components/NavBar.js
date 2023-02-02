@@ -6,6 +6,17 @@ import Meds from '../assets/images/med_icon.png'
 import CartWidget from './CartWidget'
 
 const NavBar = () => { 
+
+    const linkData = [
+        {path: '/category/Botas', nombre: 'Botas', imgSrc: Ball, altText: 'imagen botas'},
+        {path: '/category/Peleador', nombre: 'Peleador', imgSrc: Meds, altText: 'imagen peleador'},
+        {path: '/category/Tirador', nombre: 'Tirador', imgSrc: Meds, altText: 'imagen tirador'},
+        {path: '/category/Asesino', nombre: 'Asesino', imgSrc: Meds, altText: 'imagen asesino'},
+        {path: '/category/Mago', nombre: 'Mago', imgSrc: Meds, altText: 'imagen mago'},
+        {path: '/category/Tanque', nombre: 'Tanque', imgSrc: Meds, altText: 'imagen tanque'},
+        {path: '/category/Soporte', nombre: 'Soporte', imgSrc: Meds, altText: 'imagen supp'},
+      ]
+
     return(
         <Navbar sticky="top" bg="primary" variant="dark">
             <Container fluid display='flex'>
@@ -13,35 +24,12 @@ const NavBar = () => {
                     <Navbar.Brand as={Link} to="/"><img src={Logo} alt='logo' className='logo'></img></Navbar.Brand>
                 </Col>
                 <Col>
-                    <Nav className='justify-content-center align-items-center'>
-                        <Nav.Link as={NavLink} to="/category/Botas" className='btnNav'>
-                            <img src={Ball} alt='imagen botas'></img>
-                            Botas
-                        </Nav.Link>
-                        <Nav.Link as={NavLink} to="/category/Peleador" className='btnNav'>
-                            <img src={Meds} alt='imagen peleador'></img>
-                            Peleador                         
-                        </Nav.Link>
-                        <Nav.Link as={NavLink} to="/category/Tirador" className='btnNav'>
-                            <img src={Meds} alt='imagen tirador'></img>
-                            Tirador                           
-                        </Nav.Link>
-                        <Nav.Link as={NavLink} to="/category/Asesino" className='btnNav'>
-                            <img src={Meds} alt='imagen asesino'></img>
-                            Asesino                          
-                        </Nav.Link>
-                        <Nav.Link as={NavLink} to="/category/Mago" className='btnNav'>
-                            <img src={Meds} alt='imagen mago'></img>
-                            Mago                          
-                        </Nav.Link>
-                        <Nav.Link as={NavLink} to="/category/Tanque" className='btnNav'>
-                            <img src={Meds} alt='imagen tanque'></img>
-                            Tanque                          
-                        </Nav.Link>
-                        <Nav.Link as={NavLink} to="/category/Soporte" className='btnNav'>
-                            <img src={Meds} alt='imagen supp'></img>
-                            Soporte                           
-                        </Nav.Link>
+                    <Nav classnombre='justify-content-center align-items-center'>
+                        {linkData.map(({path, nombre, imgSrc, altText}) => (
+                            <Nav.Link as={NavLink} to={path} className='btnNav' key={path}>
+                                <img src={imgSrc} alt={altText}/>{nombre}
+                            </Nav.Link>
+                        ))}
                     </Nav>
                 </Col>
                 <CartWidget/>

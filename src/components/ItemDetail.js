@@ -1,6 +1,14 @@
-import { Container,Col,Row,Button } from 'react-bootstrap'
+import { Container,Col,Row} from 'react-bootstrap'
+import { useCarrito } from './CustomProvider'
+import ItemCount from './ItemCount'
 
 const ItemDetail = ({item}) => {
+    const {agregarProducto} = useCarrito()
+
+    const clickAdd = (contador,id) => {
+        agregarProducto(contador,id)
+    }
+
     return (
         <Container>
             <Row>
@@ -20,9 +28,7 @@ const ItemDetail = ({item}) => {
                     <Row>
                         ${item.precio}
                     </Row>
-                    <Row>
-                        <Button variant='primary'>Comprar</Button>
-                    </Row>
+                    <ItemCount clickAdd={clickAdd} itemId={item.id}/>
                 </Col>
             </Row>
       </Container>

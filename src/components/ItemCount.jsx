@@ -28,7 +28,7 @@ const ItemCount = ({clickAdd,item}) => {
             <Button onClick={handleSuma} variant='light'>+</Button>
         </Row>
         <Row>
-            <Button onClick={handleCounter} variant='primary'>Comprar</Button>
+            <Button onClick={handleCounter} variant='primary'>Agregar al carrito</Button>
         </Row>
         </>
     )

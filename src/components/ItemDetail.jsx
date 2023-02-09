@@ -1,10 +1,7 @@
 import { Container,Col,Row } from 'react-bootstrap'
-import { useContexto } from './CustomProvider'
 import ItemCount from './ItemCount'
 
 const ItemDetail = ({item}) => {
-
-    const {clickAdd} = useContexto()
 
     return (
         <Container>
@@ -25,7 +22,7 @@ const ItemDetail = ({item}) => {
                     <Row>
                         ${item.precio}
                     </Row>
-                    <ItemCount clickAdd={clickAdd} item={item}/>
+                    <ItemCount item={item}/>
                 </Col>
             </Row>
       </Container>

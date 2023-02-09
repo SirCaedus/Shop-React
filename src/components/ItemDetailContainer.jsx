@@ -8,7 +8,9 @@ import ItemDetail from './ItemDetail'
 const ItemDetailContainer = () => {
    
    const {id} = useParams()
+   const [carga,setCarga] = useState(false)
    const [item,setItem] = useState({})
+
    
    useEffect( () =>{
         const docRef = doc(db,"items",id)
@@ -27,6 +29,7 @@ const ItemDetailContainer = () => {
                 descripcion:productos.get('descripcion'),
                 precio:productos.get('precio')
             })
+            setCarga(true)
         })
         .catch((error) =>{
             console.log(error)
@@ -38,7 +41,7 @@ const ItemDetailContainer = () => {
    
     return (
         <>
-            <ItemDetail item={item}/>
+            {carga ? <ItemDetail item={item}/> : 'Cargando...'}
         </>
     )
 }

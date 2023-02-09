@@ -1,7 +1,10 @@
 import { useState } from 'react'
 import { Row, Button } from 'react-bootstrap'
+import { useContexto } from './CustomProvider'
 
-const ItemCount = ({clickAdd,item}) => {
+const ItemCount = ({item}) => {
+    const {agregarProducto} = useContexto()
+
     const [contador,setContador] = useState(1)
 
     const handleSuma = () => {
@@ -17,7 +20,7 @@ const ItemCount = ({clickAdd,item}) => {
     }
     
     const handleCounter = () => {
-        clickAdd(contador,item)
+        agregarProducto(contador,item)
     }
 
     return(

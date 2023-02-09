@@ -1,4 +1,5 @@
 import { createContext, useContext, useState } from 'react'
+import { toast } from 'react-toastify'
 
 const contexto = createContext()
 const Provider = contexto.Provider
@@ -11,10 +12,6 @@ export const useContexto = () => {
 const CustomProvider = ({children}) => {
     const [carrito,setCarrito] = useState([])
     const [totalProductos,setTotalProductos] = useState(0)
-
-    const clickAdd = (contador,id) => {
-        agregarProducto(contador,id)
-    }
 
     const agregarProducto = (contador,item) =>{
         const copy = carrito.map(producto => {
@@ -30,26 +27,34 @@ const CustomProvider = ({children}) => {
 
         setCarrito(copy)
         setTotalProductos(totalProductos + contador)
+        const nombre = '¡Agregaste '+ item.nombre + ' al carrito!'
+        toast.success(nombre,{
+            position: toast.POSITION.BOTTOM_RIGHT
+        })
     }
 
-    
     const eliminarProducto = (id) => {
         const copy = [...carrito]
         const index = copy.find((item) => item.id === id)
         setTotalProductos(totalProductos - index.cantidad)
         setCarrito(copy.filter((i) => i.id !== id))
+        toast.warning('¡Eliminaste el objeto del carrito!',{
+            position: toast.POSITION.BOTTOM_RIGHT
+        })
     }
 
     const vaciarCarrito = () =>{
         setCarrito([])
         setTotalProductos(0)
+        toast.warning('¡Vaciaste el carrito!',{
+            position: toast.POSITION.BOTTOM_RIGHT
+        })
     }
 
     const valorDelContexto = {
         carrito: carrito,
         totalProductos: totalProductos,
         setTotalProductos: setTotalProductos,
-        clickAdd: clickAdd,
         agregarProducto: agregarProducto,
         eliminarProducto: eliminarProducto,
         vaciarCarrito: vaciarCarrito

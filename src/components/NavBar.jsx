@@ -1,4 +1,4 @@
-import {Container,Col,Navbar,Nav} from 'react-bootstrap'
+import {Container, Col, Navbar, Nav, Offcanvas, OffcanvasTitle } from 'react-bootstrap'
 import {Link,NavLink} from 'react-router-dom'
 import Logo from '../assets/images/logo.png'
 import Ball from '../assets/images/ball_icon.png'
@@ -18,20 +18,26 @@ const NavBar = () => {
       ]
 
     return(
-        <Navbar sticky="top" bg="primary" variant="dark">
+        <Navbar expand='lg' sticky="top" bg="primary" variant="dark">
             <Container fluid display='flex'>
                 <Col>
                     <Navbar.Brand as={Link} to="/"><img src={Logo} alt='logo' className='logo'></img></Navbar.Brand>
                 </Col>
-                <Col>
-                    <Nav classnombre='justify-content-center align-items-center'>
-                        {linkData.map(({path, nombre, imgSrc, altText}) => (
-                            <Nav.Link as={NavLink} to={path} className='btnNav' key={path}>
-                                <img src={imgSrc} alt={altText}/>{nombre}
-                            </Nav.Link>
-                        ))}
-                    </Nav>
-                </Col>
+                <Navbar.Toggle aria-controls='menuCollapse'/>
+                <Navbar.Offcanvas id='menuCollapse' placement='top'>
+                    <Offcanvas.Header closeButton>
+                        <Offcanvas.Title>Categorías</Offcanvas.Title>
+                    </Offcanvas.Header>
+                    <Offcanvas.Body>
+                        <Nav classnombre='justify-content-center align-items-center'>
+                            {linkData.map(({path, nombre, imgSrc, altText}) => (
+                                <Nav.Link as={NavLink} to={path} className='btnNav' key={path}>
+                                    <img src={imgSrc} alt={altText}/>{nombre}
+                                </Nav.Link>
+                            ))}
+                        </Nav>
+                    </Offcanvas.Body>
+                </Navbar.Offcanvas>
                 <CartWidget/>
             </Container>
         </Navbar>  

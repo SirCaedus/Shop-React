@@ -35,10 +35,9 @@ const CustomProvider = ({children}) => {
     
     const eliminarProducto = (id) => {
         const copy = [...carrito]
-        const index = copy.findIndex((item) => item.id === id)
-        const item = copy[index]
-        setTotalProductos(totalProductos - item.cantidad)
-        setCarrito(copy.filter((_,i) => i !== index))
+        const index = copy.find((item) => item.id === id)
+        setTotalProductos(totalProductos - index.cantidad)
+        setCarrito(copy.filter((i) => i.id !== id))
     }
 
     const vaciarCarrito = () =>{

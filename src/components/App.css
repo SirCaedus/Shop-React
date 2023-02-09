@@ -40,6 +40,12 @@ a:link, a:visited, a:active{
   width:50%;
 }
 
+.imgCart{
+  aspect-ratio: 3/2;
+  object-fit: fill;
+  width: 100%;
+}
+
 .marginCard {
   margin: 1.5rem;
 }

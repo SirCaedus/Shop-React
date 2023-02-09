@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Row, Button } from 'react-bootstrap'
 
-const ItemCount = ({clickAdd,itemId}) => {
+const ItemCount = ({clickAdd,item}) => {
     const [contador,setContador] = useState(1)
 
     const handleSuma = () => {
@@ -17,7 +17,7 @@ const ItemCount = ({clickAdd,itemId}) => {
     }
     
     const handleCounter = () => {
-        clickAdd(contador,itemId)
+        clickAdd(contador,item)
     }
 
     return(

@@ -11,13 +11,13 @@ const ItemListContainer = () => {
     const [productos, setProductos] = useState([])
   
     useEffect(() => {
-        const productosCollection = collection(db, "items")
+        const productosCollection = collection(db, 'items')
         let filtro
   
         if (categoria) {
-          filtro = query(productosCollection, where("clase", "==", categoria))
+            filtro = query(productosCollection, where('clase', '==', categoria))
         } else {
-          filtro = productosCollection
+            filtro = productosCollection
         }
   
         const stock = getDocs(filtro)

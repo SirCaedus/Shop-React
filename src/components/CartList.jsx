@@ -1,18 +1,20 @@
 import { Container, Row } from 'react-bootstrap'
-import Item from './Item.js'
 
-const ItemList = ({productos}) => {
-    return (
+const CartList = ({productos}) => {
+    return(
         <Container fluid>
             <Row xl={4}>
                 {productos.map((item) => {
                     return (
-                        <Item item={item} key={item.id}/>
+                        productos.id
                     )
                 })}
-            </Row>
+            </Row>      
         </Container>
     )
 }
 
-export default ItemList
+
+
+
+export default CartList

@@ -1,10 +1,12 @@
 import { NavLink } from 'react-router-dom'
 import { Col,Nav } from 'react-bootstrap'
-import { useCarrito } from './CustomProvider'
+import { useContexto } from './CustomProvider'
 import Cart from '../assets/images/carrito.png'
 
 const CartWidget = () => {
-    const {totalProductos} = useCarrito()
+
+    const {totalProductos} = useContexto()
+    
     return(
         <Col className='justify-content-end d-flex'>
             <Nav.Link as={NavLink} to='/cart'>

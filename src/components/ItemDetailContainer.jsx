@@ -2,6 +2,7 @@ import { useEffect,useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { doc , getDoc } from 'firebase/firestore'
 import { db } from '../Firebase'
+import { toast } from 'react-toastify'
 import ItemDetail from './ItemDetail'
 
 const ItemDetailContainer = () => {
@@ -29,6 +30,8 @@ const ItemDetailContainer = () => {
         })
         .catch((error) =>{
             console.log(error)
+            toast.dismiss()
+            toast.error('¡Ups! parece que hubo un error. ¡Vuelve a intentarlo!')
         })
 
    },[id])

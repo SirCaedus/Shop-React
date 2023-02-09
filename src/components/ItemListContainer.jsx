@@ -2,6 +2,7 @@ import { useEffect,useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { collection , getDocs, query, where } from 'firebase/firestore'
 import { db } from '../Firebase'
+import { toast } from 'react-toastify'
 import ItemList from './ItemList'
 
 const ItemListContainer = () => {
@@ -31,7 +32,8 @@ const ItemListContainer = () => {
                 setCarga(true)
             })
             .catch((error) =>{
-                console.log(error)
+                toast.dismiss()
+                toast.error('¡Ups! parece que hubo un error. ¡Vuelve a intentarlo!')
             }) 
 
     }, [categoria])

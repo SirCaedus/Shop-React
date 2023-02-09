@@ -1,4 +1,4 @@
-import {Container, Col, Navbar, Nav, Offcanvas, OffcanvasTitle } from 'react-bootstrap'
+import {Container, Col, Navbar, Nav, Offcanvas } from 'react-bootstrap'
 import {Link,NavLink} from 'react-router-dom'
 import Logo from '../assets/images/logo.png'
 import Ball from '../assets/images/ball_icon.png'

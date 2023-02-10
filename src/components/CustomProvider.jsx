@@ -46,10 +46,9 @@ const CustomProvider = ({children}) => {
     const vaciarCarrito = () => {
         setCarrito([])
         setTotalProductos(0)
-        toast.warning('¡Vaciaste el carrito!',{
-            position: toast.POSITION.BOTTOM_RIGHT
-        })
     }
+
+    const totalCarrito = carrito.reduce((sum, item) => sum + item.precio * item.cantidad, 0)
 
     const valorDelContexto = {
         carrito: carrito,
@@ -58,6 +57,7 @@ const CustomProvider = ({children}) => {
         agregarProducto: agregarProducto,
         eliminarProducto: eliminarProducto,
         vaciarCarrito: vaciarCarrito,
+        totalCarrito: totalCarrito
     }
 
     return(

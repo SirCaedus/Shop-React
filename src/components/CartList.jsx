@@ -1,14 +1,10 @@
-import { useState} from 'react'
+import { Link } from 'react-router-dom'
 import { Container, Col, Row, Button } from 'react-bootstrap'
 import { useContexto } from './CustomProvider'
-import CartCheckout from './CartCheckout'
 
 const CartList = () => {
-    const {carrito, eliminarProducto, vaciarCarrito} = useContexto()
-    const [showCheckout, setShowCheckout] = useState(false)
+    const {carrito, eliminarProducto, vaciarCarrito, totalCarrito} = useContexto()
     const handleClick = id => () => eliminarProducto(id)
-    const handleCheckoutClick = () => setShowCheckout(true)
-    const totalPrecio = carrito.reduce((sum, item) => sum + item.precio * item.cantidad, 0)
 
     return(
         <Container>
@@ -24,8 +20,8 @@ const CartList = () => {
                         <Row key={item.id}>
                             <Col><img src={item.imagen} className='imgCart' alt={item.nombre}/></Col>
                             <Col>{item.nombre}</Col>
-                            <Col>${item.precio} c/u</Col>
                             <Col>{item.cantidad}</Col>
+                            <Col>${item.precio} c/u</Col>
                             <Col><Button onClick={handleClick(item.id)}variant='danger'>🗑️</Button></Col>
                         </Row>
                 )})}
@@ -33,16 +29,15 @@ const CartList = () => {
                     <Col></Col>
                     <Col></Col>
                     <Col></Col>
-                    <Col>Total: ${totalPrecio}</Col>
+                    <Col>Total: ${totalCarrito}</Col>
                     <Col></Col>
                 </Row>
                 <Row>
-                    <Button onClick={vaciarCarrito} variant='danger'>vaciar</Button>
-                    <Button onClick={handleCheckoutClick}>comprar</Button>
-                </Row>
-                {showCheckout && <CartCheckout/>}  
+                    <Button onClick={vaciarCarrito} variant='danger'>Vaciar</Button>
+                    <Button as={Link} to='/checkout'>Comprar</Button>
+                </Row> 
         </Container>
     )
 }
-
+  
 export default CartList

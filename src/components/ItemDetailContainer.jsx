@@ -4,12 +4,14 @@ import { doc , getDoc } from 'firebase/firestore'
 import { db } from '../Firebase'
 import { toast } from 'react-toastify'
 import ItemDetail from './ItemDetail'
+import PageNotfound from './PageNotFound'
 
 const ItemDetailContainer = () => {
    
    const {id} = useParams()
    const [carga,setCarga] = useState(false)
    const [item,setItem] = useState({})
+   const [idExists,setIdExists] = useState(true)
 
    
    useEffect( () =>{
@@ -18,17 +20,21 @@ const ItemDetailContainer = () => {
         stock
         .then((respuesta) =>{
             const productos = respuesta
-            return productos
+            return productos               
         })
         .then((productos)=>{
-            setItem({
-                id:productos.id,
-                nombre:productos.get('nombre'),
-                imagen:productos.get('imagen'),
-                clase:productos.get('clase'),
-                descripcion:productos.get('descripcion'),
-                precio:productos.get('precio')
-            })
+            if (productos.exists()){
+                setItem({
+                    id:productos.id,
+                    nombre:productos.get('nombre'),
+                    imagen:productos.get('imagen'),
+                    clase:productos.get('clase'),
+                    descripcion:productos.get('descripcion'),
+                    precio:productos.get('precio')
+                })
+            } else {
+                setIdExists(false)
+            }
             setCarga(true)
         })
         .catch((error) =>{
@@ -41,7 +47,9 @@ const ItemDetailContainer = () => {
    
     return (
         <>
-            {carga ? <ItemDetail item={item}/> : 'Cargando...'}
+            {carga ? 
+                idExists ? <ItemDetail item={item}/> : <PageNotfound/>
+            : 'Cargando...'}
         </>
     )
 }

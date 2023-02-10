@@ -13,7 +13,7 @@ const CustomProvider = ({children}) => {
     const [carrito,setCarrito] = useState([])
     const [totalProductos,setTotalProductos] = useState(0)
 
-    const agregarProducto = (contador,item) =>{
+    const agregarProducto = (contador,item) => {
         const copy = carrito.map(producto => {
             if (producto.id === item.id){
                 return {...producto, cantidad: producto.cantidad + contador}
@@ -43,7 +43,7 @@ const CustomProvider = ({children}) => {
         })
     }
 
-    const vaciarCarrito = () =>{
+    const vaciarCarrito = () => {
         setCarrito([])
         setTotalProductos(0)
         toast.warning('¡Vaciaste el carrito!',{
@@ -57,7 +57,7 @@ const CustomProvider = ({children}) => {
         setTotalProductos: setTotalProductos,
         agregarProducto: agregarProducto,
         eliminarProducto: eliminarProducto,
-        vaciarCarrito: vaciarCarrito
+        vaciarCarrito: vaciarCarrito,
     }
 
     return(

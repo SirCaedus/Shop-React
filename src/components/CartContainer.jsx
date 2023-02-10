@@ -1,37 +1,20 @@
-//import { useEffect } from 'react'
-import { Container, Row, Col,Button } from 'react-bootstrap'
+import { useState, useEffect } from 'react'
+import { Container } from 'react-bootstrap'
 import { useContexto } from './CustomProvider'
+import CartList from './CartList'
 
 const CartContainer = () => {
-    const {carrito, eliminarProducto,vaciarCarrito} = useContexto()
+    const {carrito} = useContexto()
+    const [carritoEmpty,setCarritoEmpty] = useState(true)
 
-    const handleClick = id => () => eliminarProducto(id)
-   /* useEffect( () => {
-  
+    useEffect( () =>{
+        carrito.length === 0 ? setCarritoEmpty(true) : setCarritoEmpty(false)
+    },[carrito])
 
-
-    }) */
     return (
-        <Container>
-                <Row>
-                    <Col></Col>
-                    <Col></Col>
-                    <Col>precio</Col>
-                    <Col>cantidad</Col>
-                    <Col>Borrar</Col>
-                </Row>
-                {carrito.map((item) =>{
-                    return(
-                        <Row key={item.id}>
-                            <Col><img src={item.imagen} className='imgCart' alt={item.nombre}/></Col>
-                            <Col>{item.nombre}</Col>
-                            <Col>${item.precio} c/u</Col>
-                            <Col>{item.cantidad}</Col>
-                            <Col><Button onClick={handleClick(item.id)}variant='danger'>🗑️</Button></Col>
-                        </Row>
-                )})}
-                <Row><Button onClick={vaciarCarrito} variant='danger'>vaciar</Button></Row>  
-        </Container>
+        <>
+        {carritoEmpty ? <Container>¡Ups! parece que no hay nada en el carrito.</Container> : <CartList/>}
+        </>
     )
 }
 

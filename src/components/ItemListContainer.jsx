@@ -4,12 +4,14 @@ import { collection , getDocs, query, where } from 'firebase/firestore'
 import { db } from '../Firebase'
 import { toast } from 'react-toastify'
 import ItemList from './ItemList'
+import PageNotFound from './PageNotFound'
 
 const ItemListContainer = () => {
 
     const {categoria} = useParams()
     const [carga, setCarga] = useState(false)
     const [productos, setProductos] = useState([])
+    const [categoriaExists,setCategoriaExists] = useState(true)
   
     useEffect(() => {
         const productosCollection = collection(db, 'items')
@@ -28,7 +30,13 @@ const ItemListContainer = () => {
                     ...doc.data(),
                     id: doc.id
                 }))
-                setProductos(productos)
+
+                if (!(productos.length === 0)){
+                    setProductos(productos)
+                    setCategoriaExists(true) 
+                } else {
+                    setCategoriaExists(false)  
+                }
                 setCarga(true)
             })
             .catch((error) =>{
@@ -40,7 +48,9 @@ const ItemListContainer = () => {
 
    return (
         <>
-        {carga ? <ItemList productos={productos}/> : 'Cargando...'}
+        {carga 
+            ? categoriaExists ? <ItemList productos={productos}/> : <PageNotFound/>
+            : 'Cargando...'}
         </>
     )
 }

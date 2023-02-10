@@ -47,9 +47,10 @@ const ItemDetailContainer = () => {
    
     return (
         <>
-            {carga ? 
-                idExists ? <ItemDetail item={item}/> : <PageNotfound/>
-            : 'Cargando...'}
+            {carga  
+                ?   idExists ? <ItemDetail item={item}/> : <PageNotfound/>
+                :   'Cargando...'
+            }
         </>
     )
 }

@@ -1,20 +1,25 @@
 import {Container, Col, Navbar, Nav, Offcanvas } from 'react-bootstrap'
-import {Link,NavLink} from 'react-router-dom'
-import Logo from '../assets/images/logo.png'
-import Ball from '../assets/images/ball_icon.png'
-import Meds from '../assets/images/med_icon.png'
+import { Link,NavLink } from 'react-router-dom'
+import Logo from '../assets/images/lolshop.png'
+import BotasPic from '../assets/images/botas.png'
+import TiradorPic from '../assets/images/tirador.png'
+import PeleadorPic from '../assets/images/peleador.png'
+import AsesinoPic from '../assets/images/asesino.png'
+import MagoPic from '../assets/images/mago.png'
+import TanquePic from '../assets/images/tanque.png'
+import SoportePic from '../assets/images/soporte.png'
 import CartWidget from './CartWidget'
 
 const NavBar = () => { 
 
     const linkData = [
-        {path: '/category/Botas', nombre: 'Botas', imgSrc: Ball, altText: 'imagen botas'},
-        {path: '/category/Peleador', nombre: 'Peleador', imgSrc: Meds, altText: 'imagen peleador'},
-        {path: '/category/Tirador', nombre: 'Tirador', imgSrc: Meds, altText: 'imagen tirador'},
-        {path: '/category/Asesino', nombre: 'Asesino', imgSrc: Meds, altText: 'imagen asesino'},
-        {path: '/category/Mago', nombre: 'Mago', imgSrc: Meds, altText: 'imagen mago'},
-        {path: '/category/Tanque', nombre: 'Tanque', imgSrc: Meds, altText: 'imagen tanque'},
-        {path: '/category/Soporte', nombre: 'Soporte', imgSrc: Meds, altText: 'imagen supp'},
+        {path: '/category/Botas', nombre: 'Botas', imgSrc: BotasPic, altText: 'imagen botas'},
+        {path: '/category/Peleador', nombre: 'Peleador', imgSrc: PeleadorPic, altText: 'imagen peleador'},
+        {path: '/category/Tirador', nombre: 'Tirador', imgSrc: TiradorPic, altText: 'imagen tirador'},
+        {path: '/category/Asesino', nombre: 'Asesino', imgSrc: AsesinoPic, altText: 'imagen asesino'},
+        {path: '/category/Mago', nombre: 'Mago', imgSrc: MagoPic, altText: 'imagen mago'},
+        {path: '/category/Tanque', nombre: 'Tanque', imgSrc: TanquePic, altText: 'imagen tanque'},
+        {path: '/category/Soporte', nombre: 'Soporte', imgSrc: SoportePic, altText: 'imagen supp'},
       ]
 
     return(

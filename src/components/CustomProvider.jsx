@@ -31,6 +31,7 @@ const CustomProvider = ({children}) => {
         toast.success(nombre,{
             position: toast.POSITION.BOTTOM_RIGHT
         })
+        localStorage.setItem('carrito',JSON.stringify(carrito))
     }
 
     const eliminarProducto = (id) => {
@@ -41,14 +42,20 @@ const CustomProvider = ({children}) => {
         toast.warning('¡Eliminaste el objeto del carrito!',{
             position: toast.POSITION.BOTTOM_RIGHT
         })
+        localStorage.setItem('carrito',JSON.stringify(carrito))
     }
 
     const vaciarCarrito = () => {
         setCarrito([])
         setTotalProductos(0)
+        localStorage.clear()
     }
 
     const totalCarrito = carrito.reduce((sum, item) => sum + item.precio * item.cantidad, 0)
+
+   /* const localStorageInit = () => {
+        setCarrito(JSON.parse(localStorage.getItem('carrito')))        
+    } */
 
     const valorDelContexto = {
         carrito: carrito,
@@ -58,6 +65,7 @@ const CustomProvider = ({children}) => {
         eliminarProducto: eliminarProducto,
         vaciarCarrito: vaciarCarrito,
         totalCarrito: totalCarrito
+       // localStorageInit: localStorageInit
     }
 
     return(

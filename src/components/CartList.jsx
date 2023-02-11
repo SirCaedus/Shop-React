@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Container, Col, Row, Button } from 'react-bootstrap'
 import { useContexto } from './CustomProvider'
+import Trash from '../assets/images/trash.png'
 
 const CartList = () => {
     const {carrito, eliminarProducto, vaciarCarrito, totalCarrito} = useContexto()
@@ -22,7 +23,7 @@ const CartList = () => {
                             <Col>{item.nombre}</Col>
                             <Col>{item.cantidad}</Col>
                             <Col>${item.precio} c/u</Col>
-                            <Col><Button onClick={handleClick(item.id)}variant='danger'>🗑️</Button></Col>
+                            <Col><Button onClick={handleClick(item.id)}variant='danger'><img src={Trash} alt='a'></img></Button></Col>
                         </Row>
                 )})}
                 <Row>

@@ -6,7 +6,7 @@ import PageNotFound from './PageNotFound'
 import CartCheckout from './CartCheckout'
 
 const Main = () => {
- 
+
     return (
         <main>
             <Routes>

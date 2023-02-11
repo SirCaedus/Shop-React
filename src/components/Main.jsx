@@ -8,7 +8,7 @@ import CartCheckout from './CartCheckout'
 const Main = () => {
 
     return (
-        <main>
+        <main className='bgMain fontWhite'>
             <Routes>
                 <Route path='/' element={<ItemListContainer/>}/>
                 <Route path='/category/:categoria' element={<ItemListContainer/>}/>

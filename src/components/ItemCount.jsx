@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Row, Button } from 'react-bootstrap'
+import { Row, Button,Col } from 'react-bootstrap'
 import { useContexto } from './CustomProvider'
 
 const ItemCount = ({item}) => {
@@ -26,12 +26,18 @@ const ItemCount = ({item}) => {
     return(
         <>
         <Row>
-            <Button onClick={handleResta} variant='light'>-</Button>
-            <span>{contador}</span>
-            <Button onClick={handleSuma} variant='light'>+</Button>
+            <Col>
+                <Button onClick={handleSuma} variant='outline-light' className='btnCount'>+</Button>
+            </Col>
+            <Col>
+                <span>{contador}</span>
+            </Col>
+            <Col>
+                <Button onClick={handleResta} variant='outline-light' className='btnCount'>-</Button>
+            </Col>
         </Row>
         <Row>
-            <Button onClick={handleCounter} variant='primary'>Agregar al carrito</Button>
+            <Button onClick={handleCounter} variant='success'>Agregar al carrito</Button>
         </Row>
         </>
     )

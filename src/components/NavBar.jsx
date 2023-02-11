@@ -23,24 +23,26 @@ const NavBar = () => {
       ]
 
     return(
-        <Navbar expand='lg' sticky="top" bg="primary" variant="dark">
+        <Navbar expand='lg' sticky='top' bg='customDark' variant='dark' className='fontWhite'>
             <Container fluid display='flex'>
                 <Col>
-                    <Navbar.Brand as={Link} to="/"><img src={Logo} alt='logo' className='logo'></img></Navbar.Brand>
+                    <Navbar.Brand as={Link} to='/'><img src={Logo} alt='logo' className='logo'></img></Navbar.Brand>
                 </Col>
                 <Navbar.Toggle aria-controls='menuCollapse'/>
                 <Navbar.Offcanvas id='menuCollapse' placement='top'>
-                    <Offcanvas.Header closeButton>
+                    <Offcanvas.Header closeButton closeVariant='white' className='customDark'>
                         <Offcanvas.Title>Categorías</Offcanvas.Title>
                     </Offcanvas.Header>
-                    <Offcanvas.Body>
-                        <Nav classnombre='justify-content-center align-items-center'>
+                    <Offcanvas.Body className='scrollBar'>
+                    <Col>
+                        <Nav className='navAlign'>
                             {linkData.map(({path, nombre, imgSrc, altText}) => (
-                                <Nav.Link as={NavLink} to={path} className='btnNav' key={path}>
+                                <Nav.Link as={NavLink} to={path} className='btnNav' key={nombre}>
                                     <img src={imgSrc} alt={altText}/>{nombre}
                                 </Nav.Link>
                             ))}
                         </Nav>
+                    </Col>
                     </Offcanvas.Body>
                 </Navbar.Offcanvas>
                 <CartWidget/>

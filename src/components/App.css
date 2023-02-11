@@ -4,7 +4,7 @@ body{
 }
 
 main{
-  min-height: 78vh;
+  min-height: 100vh; 
 }
 
 .logo{
@@ -82,8 +82,46 @@ a:link, a:visited, a:active{
   background-color: #000913;
 }
 
-.btnCount {
+.btnAddMain button{
+  width: 15rem;
+  margin-bottom: 1rem;
+}
+
+.btnCountMain button{
  width: 3rem;
+ margin-bottom: 1rem;
+}
+
+.btnAddDetail div {
+  display: flex;
+  justify-content: center;
+
+}
+
+.btnAddDetail button{
+  width: 8.5rem;
+  
+}
+
+.btnCountDetail div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center; 
+}
+
+.btnCountDetail button{
+  width: 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+}
+
+.detailAlign div{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  justify-content: center;
 }
 
 .fontWhite {

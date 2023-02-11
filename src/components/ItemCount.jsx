@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Row, Button,Col } from 'react-bootstrap'
 import { useContexto } from './CustomProvider'
 
-const ItemCount = ({item}) => {
+const ItemCount = ({item,location}) => {
     const {agregarProducto} = useContexto()
 
     const [contador,setContador] = useState(1)
@@ -23,21 +23,30 @@ const ItemCount = ({item}) => {
         agregarProducto(contador,item)
     }
 
+    let btnCount
+    let btnMain
+    if (location === 'main'){
+       btnCount = 'btnCountMain'
+       btnMain = 'btnAddMain'
+    } else {
+       btnCount = 'btnCountDetail'
+       btnMain = 'btnAddDetail'
+    }
+
+
     return(
         <>
-        <Row>
+        <Row className={btnCount}>
             <Col>
-                <Button onClick={handleSuma} variant='outline-light' className='btnCount'>+</Button>
-            </Col>
-            <Col>
-                <span>{contador}</span>
-            </Col>
-            <Col>
-                <Button onClick={handleResta} variant='outline-light' className='btnCount'>-</Button>
+                <Button onClick={handleSuma} variant='outline-light'>+</Button>
+                {contador}
+                <Button onClick={handleResta} variant='outline-light'>-</Button>
             </Col>
         </Row>
-        <Row>
-            <Button onClick={handleCounter} variant='success'>Agregar al carrito</Button>
+        <Row className={btnMain}>
+            <Col>
+                <Button onClick={handleCounter} variant='success'>Agregar al carrito</Button>
+            </Col>
         </Row>
         </>
     )

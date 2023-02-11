@@ -9,20 +9,21 @@ const ItemDetail = ({item}) => {
                 <Col sm={4}>
                     <img src={item.imagen} className='imgDetail' alt={item.nombre}/>
                 </Col>
-                <Col sm={8}>
+                <Col sm={8} className='detailAlign'>
                     <Row>
                         <h2>{item.nombre}</h2>
                     </Row>
                     <Row>
-                        clase: {item.clase}
+                        <h3>Clase: {item.clase}</h3>
                     </Row>
+                    {item.descripcion.map((line) =>{
+                        return(<Row key={line}>{line}</Row>)
+                    } 
+                    )}
                     <Row>
-                        {item.descripcion}
+                        <h3>Precio: ${item.precio}</h3>
                     </Row>
-                    <Row>
-                        ${item.precio}
-                    </Row>
-                    <ItemCount item={item}/>
+                    <ItemCount item={item} location='detail'/>
                 </Col>
             </Row>
       </Container>

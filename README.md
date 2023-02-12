@@ -4,18 +4,18 @@
 
 ## Características principales
 
-*Gran catálogo de objetos, dividido en distintas categorías, accesibles desde el NavBar.
-*Se pueden agregar objetos al carrito tanto desde el menú como desde el detalle de cada objeto.
-*Posibilidad de agregar distintas cantidades del mismo objeto con un solo click.
-*Posibilidad de borrar objetos específicos desde el carrito.
-*Formulario de usuario con validación para confirmar la compra.
-*Guardado del carrito en LocalStorage.
+* Gran catálogo de objetos, dividido en distintas categorías, accesibles desde el NavBar.
+* Se pueden agregar objetos al carrito tanto desde el menú como desde el detalle de cada objeto.
+* Posibilidad de agregar distintas cantidades del mismo objeto con un solo click.
+* Posibilidad de borrar objetos específicos desde el carrito.
+* Formulario de usuario con validación para confirmar la compra.
+* Guardado del carrito en LocalStorage.
 
 ## Librerías utilizadas
-*React-Bootstrap para la maquetación de la página.
-*React-Toastify para alertas personalizadas.
-*React-Router para una navegación más sencilla y eficiente.
-*Cloud Database de Firebase para la gestión de los datos.
+* React-Bootstrap para la maquetación de la página.
+* React-Toastify para alertas personalizadas.
+* React-Router para una navegación más sencilla y eficiente.
+* Cloud Database de Firebase para la gestión de los datos.
 
 ## Uso del proyecto
 Descarga el código fuente desde el repositorio de GitHub.

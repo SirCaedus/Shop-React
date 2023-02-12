@@ -9,16 +9,16 @@ const CartList = () => {
 
     return(
         <Container>
-                <Row>
+                <Row className='detailAlign fontBold'>
                     <Col></Col>
-                    <Col></Col>
-                    <Col>precio</Col>
-                    <Col>cantidad</Col>
+                    <Col>Nombre</Col>
+                    <Col>Cantidad</Col>
+                    <Col>Precio</Col>
                     <Col>Borrar</Col>
                 </Row>
                 {carrito.map((item) =>{
                     return(
-                        <Row key={item.id}>
+                        <Row key={item.id} className='cartAlign'>
                             <Col><img src={item.imagen} className='imgCart' alt={item.nombre}/></Col>
                             <Col>{item.nombre}</Col>
                             <Col>{item.cantidad}</Col>
@@ -34,8 +34,8 @@ const CartList = () => {
                     <Col></Col>
                 </Row>
                 <Row>
-                    <Button onClick={vaciarCarrito} variant='danger'>Vaciar</Button>
-                    <Button as={Link} to='/checkout'>Comprar</Button>
+                    <Button onClick={vaciarCarrito} variant='danger'>Vaciar carrito</Button>
+                    <Button as={Link} to='/checkout' variant='success'>Comprar</Button>
                 </Row> 
         </Container>
     )

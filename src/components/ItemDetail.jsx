@@ -11,17 +11,17 @@ const ItemDetail = ({item}) => {
                 </Col>
                 <Col sm={8} className='detailAlign'>
                     <Row>
-                        <h2>{item.nombre}</h2>
+                        <h1 className='fontTitle'>{item.nombre}</h1>
                     </Row>
                     <Row>
-                        <h3>Clase: {item.clase}</h3>
+                        <h3 className='fontBold'>Clase: {item.clase}</h3>
                     </Row>
                     {item.descripcion.map((line) =>{
                         return(<Row key={line}>{line}</Row>)
                     } 
                     )}
                     <Row>
-                        <h3>Precio: ${item.precio}</h3>
+                        <h3 className='fontBold'>Precio: ${item.precio}</h3>
                     </Row>
                     <ItemCount item={item} location='detail'/>
                 </Col>

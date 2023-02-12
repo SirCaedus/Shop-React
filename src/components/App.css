@@ -1,3 +1,22 @@
+@font-face {
+  font-family: 'Spiegel';
+  src: local('Spiegel'), url(../assets/Fonts/Spiegel-Regular.otf) format('opentype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'SpiegelBold';
+  src: local('SpiegelBold'), url(../assets/Fonts/Spiegel-Bold.otf) format('opentype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Beaufort';
+  src: local('Beaufort'), url(../assets/Fonts/BeaufortforLOL-Bold.otf) format('opentype');
+}
+
 body{
   margin: 0;
   padding: 0;
@@ -38,13 +57,13 @@ a:link, a:visited, a:active{
 }
 
 .imgDetail{
-  display: flex;
-  width: 50%;
+  width: 100%;
+  margin-top: 1rem;
 }
 
 .imgCart{
   aspect-ratio: 3/2;
-  object-fit: fill;
+  object-fit:cover;
   width: 100%;
 }
 
@@ -83,13 +102,18 @@ a:link, a:visited, a:active{
 }
 
 .btnAddMain button{
-  width: 15rem;
+  width: 11rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.btnCountMain span{
+  margin-left: 2.2rem;
+  margin-right: 2.2rem;
 }
 
 .btnCountMain button{
  width: 3rem;
- margin-bottom: 1rem;
 }
 
 .btnAddDetail div {
@@ -100,7 +124,6 @@ a:link, a:visited, a:active{
 
 .btnAddDetail button{
   width: 8.5rem;
-  
 }
 
 .btnCountDetail div{
@@ -114,7 +137,6 @@ a:link, a:visited, a:active{
   width: 3rem;
   margin-left: 1rem;
   margin-right: 1rem;
-
 }
 
 .detailAlign div{
@@ -124,9 +146,30 @@ a:link, a:visited, a:active{
   justify-content: center;
 }
 
+.cartAlign div{
+  display: flex;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .fontWhite {
   color: #e1e1e1;
 }
+
+.fontTitle{
+  font-family: 'Beaufort';
+  font-size: 4rem;
+}
+
+.fontBold{
+  font-family: 'SpiegelBold';
+  font-size: 1.5rem;
+}
+
 
 .navAlign {
   justify-content: space-around;

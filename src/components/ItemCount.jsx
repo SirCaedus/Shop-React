@@ -39,7 +39,7 @@ const ItemCount = ({item,location}) => {
         <Row className={btnCount}>
             <Col>
                 <Button onClick={handleSuma} variant='outline-light'>+</Button>
-                {contador}
+                <span>{contador}</span>
                 <Button onClick={handleResta} variant='outline-light'>-</Button>
             </Col>
         </Row>

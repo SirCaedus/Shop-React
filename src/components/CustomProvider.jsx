@@ -1,8 +1,9 @@
-import { createContext, useContext, useState } from 'react'
+import { createContext, useContext, useState,useEffect } from 'react'
 import { toast } from 'react-toastify'
 
 const contexto = createContext()
 const Provider = contexto.Provider
+
 
 export const useContexto = () => {
     const valorDelContexto = useContext(contexto)
@@ -10,8 +11,16 @@ export const useContexto = () => {
 }
 
 const CustomProvider = ({children}) => {
-    const [carrito,setCarrito] = useState([])
-    const [totalProductos,setTotalProductos] = useState(0)
+    const [carrito,setCarrito] = useState(JSON.parse(localStorage.getItem('carrito')) || [])
+    const [totalProductos,setTotalProductos] = useState(parseInt(localStorage.getItem('totalProductos')) || 0)
+
+    useEffect(() => {
+        localStorage.setItem('carrito', JSON.stringify(carrito))
+    },[carrito])
+    
+    useEffect(() => {
+        localStorage.setItem('totalProductos', totalProductos.toString())
+    },[totalProductos])
 
     const agregarProducto = (contador,item) => {
         const copy = carrito.map(producto => {
@@ -31,7 +40,6 @@ const CustomProvider = ({children}) => {
         toast.success(nombre,{
             position: toast.POSITION.BOTTOM_RIGHT
         })
-        localStorage.setItem('carrito',JSON.stringify(carrito))
     }
 
     const eliminarProducto = (id) => {
@@ -42,20 +50,14 @@ const CustomProvider = ({children}) => {
         toast.warning('¡Eliminaste el objeto del carrito!',{
             position: toast.POSITION.BOTTOM_RIGHT
         })
-        localStorage.setItem('carrito',JSON.stringify(carrito))
     }
 
     const vaciarCarrito = () => {
         setCarrito([])
         setTotalProductos(0)
-        localStorage.clear()
     }
 
     const totalCarrito = carrito.reduce((sum, item) => sum + item.precio * item.cantidad, 0)
-
-   /* const localStorageInit = () => {
-        setCarrito(JSON.parse(localStorage.getItem('carrito')))        
-    } */
 
     const valorDelContexto = {
         carrito: carrito,
@@ -65,7 +67,6 @@ const CustomProvider = ({children}) => {
         eliminarProducto: eliminarProducto,
         vaciarCarrito: vaciarCarrito,
         totalCarrito: totalCarrito
-       // localStorageInit: localStorageInit
     }
 
     return(

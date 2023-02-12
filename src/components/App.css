@@ -26,17 +26,52 @@ main{
   min-height: 100vh; 
 }
 
-.logo{
-  width: 10rem; 
-}
-
-.footer{
-  position: relative;
-  bottom: 0px;
-}
-
 a:link, a:visited, a:active{
   text-decoration: none;
+}
+
+.btnAddMain button{
+  width: 11rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btnAddDetail div {
+  display: flex;
+  justify-content: center;
+
+}
+
+.btnAddDetail button{
+  width: 8.5rem;
+}
+
+.btnCart button,
+.btnCart a{
+  width: 8rem;
+  margin-right:1rem;
+}
+
+.btnCountMain span{
+  margin-left: 2.2rem;
+  margin-right: 2.2rem;
+}
+
+.btnCountMain button{
+ width: 3rem;
+}
+
+.btnCountDetail div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center; 
+}
+
+.btnCountDetail button{
+  width: 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .btnNav:hover{
@@ -49,16 +84,63 @@ a:link, a:visited, a:active{
   transform: scale(0.8);
 }
 
-.imgSize{
-  width: 80%;
-  aspect-ratio: 3/2; 
-  object-fit: contain;
-  margin: 0 auto;
+.bg-customDark {
+  background-color: #111111;
 }
 
-.imgDetail{
-  width: 100%;
-  margin-top: 1rem;
+.bgMain {
+  background-color: #000913;
+}
+
+.bgCard {
+  background-color: #282828;
+}
+
+.cartAlign div{
+  display: flex;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.detailAlign div{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.footer{
+  display: flex;
+  position: relative;
+  bottom: 0px;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+
+.footer img{
+  width: 3rem;
+}
+
+.fontWhite {
+  color: #e1e1e1;
+}
+
+.fontTitle{
+  font-family: 'Beaufort';
+  font-size: 4rem;
+}
+
+.fontBold{
+  font-family: 'SpiegelBold';
+  font-size: 1.5rem;
+}
+
+.formCheckout{
+  text-align: center;
 }
 
 .imgCart{
@@ -67,14 +149,35 @@ a:link, a:visited, a:active{
   width: 100%;
 }
 
-.marginCard {
-  margin: 1rem;
-  max-height: 40rem;
+.imgDetail{
+  width: 100%;
+  margin-top: 1rem;
 }
 
-#menuCollapse {
-  background-color: #111111;
-  color: #e1e1e1;
+.imgSize{
+  width: 80%;
+  aspect-ratio: 3/2; 
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.loadingPages{
+  padding-top: 2rem;
+  text-align: center;
+  font-family: 'Beaufort';
+}
+
+.logo{
+  width: 10rem; 
+}
+
+.navAlign {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.paddingTop{
+  padding-top: 2rem;
 }
 
 .scrollBar::-webkit-scrollbar{
@@ -93,91 +196,14 @@ a:link, a:visited, a:active{
   background: #555;
 } 
 
-.bg-customDark {
+.formCheckout label,
+.formCheckout Button,
+.checkoutAlign,
+.marginCard{
+  margin: 1rem;
+}
+
+#menuCollapse {
   background-color: #111111;
-}
-
-.bgMain {
-  background-color: #000913;
-}
-
-.btnAddMain button{
-  width: 11rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.btnCountMain span{
-  margin-left: 2.2rem;
-  margin-right: 2.2rem;
-}
-
-.btnCountMain button{
- width: 3rem;
-}
-
-.btnAddDetail div {
-  display: flex;
-  justify-content: center;
-
-}
-
-.btnAddDetail button{
-  width: 8.5rem;
-}
-
-.btnCountDetail div{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-items: center; 
-}
-
-.btnCountDetail button{
-  width: 3rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.detailAlign div{
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  text-align: center;
-  justify-content: center;
-}
-
-.cartAlign div{
-  display: flex;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-
-
-.fontWhite {
   color: #e1e1e1;
 }
-
-.fontTitle{
-  font-family: 'Beaufort';
-  font-size: 4rem;
-}
-
-.fontBold{
-  font-family: 'SpiegelBold';
-  font-size: 1.5rem;
-}
-
-
-.navAlign {
-  justify-content: space-around;
-  align-items: center;
-}
-
-@media (min-width: 1200px){
-  .logo{
-    width: 10rem;
-  }
-} 

@@ -1,6 +1,6 @@
 import { Container, Col, Row } from 'react-bootstrap'
 import { useEffect } from 'react'
-import { useContexto } from './CustomProvider'
+import { useContexto } from '../CustomProvider'
 
 
 const EndCheckout = ({formData}) => {
@@ -20,13 +20,13 @@ const EndCheckout = ({formData}) => {
         return() => {vaciarCarrito()}
     })
 
-    return(
+    return(  
         <Container>
-            <Row>
+            <Row className='fontTitle checkoutAlign'>
                 <h2>¡Su compra se ha realizado con éxito!</h2>
                 <h3>Le enviamos un correo electrónico con toda la información.</h3>
             </Row>
-            <Row>
+            <Row className='checkoutAlign'>
                 <h3>Resumen de su compra:</h3>
                 <div>ID: {randomId()}</div>
                 <div>NOMBRE: {formData.nombre}</div>
@@ -34,23 +34,23 @@ const EndCheckout = ({formData}) => {
                 <div>TELEFONO: {formData.telefono}</div>
                 <div>EMAIL: {formData.email}</div>
             </Row>
-            <Row>
+            <Row className='detailAlign bgCard'>
                 <Col></Col>
                 <Col>cantidad</Col>
                 <Col>precio</Col>
             </Row>
             {carrito.map((item) =>{
                     return(
-                        <Row key={item.id}>
+                        <Row key={item.id} className='cartAlign bgCard'>
                             <Col>{item.nombre}</Col>
                             <Col>{item.cantidad}</Col>
                             <Col>${item.precio} c/u</Col>
                         </Row>
-                )})}
-            <Row>
+                    )})}
+            <Row className='cartAlign'>
                 <Col></Col>
                 <Col></Col>
-                <Col>Total: ${totalCarrito}</Col>
+                <Col className='bgCard'>Total: ${totalCarrito}</Col>
             </Row>
         </Container>
     )

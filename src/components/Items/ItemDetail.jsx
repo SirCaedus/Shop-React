@@ -1,11 +1,10 @@
-import { Container,Col,Row } from 'react-bootstrap'
+import { Container, Col, Row } from 'react-bootstrap'
 import ItemCount from './ItemCount'
 
 const ItemDetail = ({item}) => {
-
     return (
-        <Container>
-            <Row>
+        <Container className='paddingTop'>
+            <Row className='bgCard'>
                 <Col sm={4}>
                     <img src={item.imagen} className='imgDetail' alt={item.nombre}/>
                 </Col>
@@ -18,8 +17,7 @@ const ItemDetail = ({item}) => {
                     </Row>
                     {item.descripcion.map((line) =>{
                         return(<Row key={line}>{line}</Row>)
-                    } 
-                    )}
+                    })}
                     <Row>
                         <h3 className='fontBold'>Precio: ${item.precio}</h3>
                     </Row>

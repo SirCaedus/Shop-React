@@ -1,9 +1,10 @@
-import { useState, useEffect } from 'react'
+import { useEffect,useState } from 'react'
 import { Container } from 'react-bootstrap'
-import { useContexto } from './CustomProvider'
+import { useContexto } from '../CustomProvider'
 import CartList from './CartList'
 
 const CartContainer = () => {
+    
     const {carrito} = useContexto()
     const [carritoEmpty,setCarritoEmpty] = useState(true)
 
@@ -13,7 +14,7 @@ const CartContainer = () => {
 
     return (
         <>
-        {carritoEmpty ? <Container>¡Ups! parece que no hay nada en el carrito.</Container> : <CartList/>}
+        {carritoEmpty ? <Container className='loadingPages'>¡Ups! parece que no hay nada en el carrito.</Container> : <CartList/>}
         </>
     )
 }

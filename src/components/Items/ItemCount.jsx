@@ -1,8 +1,9 @@
 import { useState } from 'react'
-import { Row, Button,Col } from 'react-bootstrap'
-import { useContexto } from './CustomProvider'
+import { Button, Col, Row } from 'react-bootstrap'
+import { useContexto } from '../CustomProvider'
 
 const ItemCount = ({item,location}) => {
+    
     const {agregarProducto} = useContexto()
 
     const [contador,setContador] = useState(1)

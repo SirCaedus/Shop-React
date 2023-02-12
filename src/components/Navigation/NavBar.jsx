@@ -1,14 +1,14 @@
 import {Container, Col, Navbar, Nav, Offcanvas } from 'react-bootstrap'
 import { Link,NavLink } from 'react-router-dom'
-import Logo from '../assets/images/lolshop.png'
-import BotasPic from '../assets/images/botas.png'
-import TiradorPic from '../assets/images/tirador.png'
-import PeleadorPic from '../assets/images/peleador.png'
-import AsesinoPic from '../assets/images/asesino.png'
-import MagoPic from '../assets/images/mago.png'
-import TanquePic from '../assets/images/tanque.png'
-import SoportePic from '../assets/images/soporte.png'
-import CartWidget from './CartWidget'
+import Logo from '../../assets/images/lolshop.png'
+import BotasPic from '../../assets/images/botas.png'
+import TiradorPic from '../../assets/images/tirador.png'
+import PeleadorPic from '../../assets/images/peleador.png'
+import AsesinoPic from '../../assets/images/asesino.png'
+import MagoPic from '../../assets/images/mago.png'
+import TanquePic from '../../assets/images/tanque.png'
+import SoportePic from '../../assets/images/soporte.png'
+import CartWidget from '../Cart/CartWidget'
 
 const NavBar = () => { 
 
@@ -34,15 +34,15 @@ const NavBar = () => {
                         <Offcanvas.Title>Categorías</Offcanvas.Title>
                     </Offcanvas.Header>
                     <Offcanvas.Body className='scrollBar'>
-                    <Col>
-                        <Nav className='navAlign'>
-                            {linkData.map(({path, nombre, imgSrc, altText}) => (
-                                <Nav.Link as={NavLink} to={path} className='btnNav' key={nombre}>
-                                    <img src={imgSrc} alt={altText}/>{nombre}
-                                </Nav.Link>
-                            ))}
-                        </Nav>
-                    </Col>
+                        <Col>
+                            <Nav className='navAlign'>
+                                {linkData.map(({path, nombre, imgSrc, altText}) => (
+                                    <Nav.Link as={NavLink} to={path} className='btnNav' key={nombre}>
+                                        <img src={imgSrc} alt={altText}/>{nombre}
+                                    </Nav.Link>
+                                ))}
+                            </Nav>
+                        </Col>
                     </Offcanvas.Body>
                 </Navbar.Offcanvas>
                 <CartWidget/>
@@ -51,4 +51,4 @@ const NavBar = () => {
     )
 }
 
-export default NavBar;
+export default NavBar

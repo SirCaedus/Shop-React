@@ -1,10 +1,11 @@
 import { useEffect,useState } from 'react'
 import { useParams } from 'react-router-dom'
+import { Container } from 'react-bootstrap'
 import { collection , getDocs, query, where } from 'firebase/firestore'
-import { db } from '../Firebase'
+import { db } from '../../Firebase'
 import { toast } from 'react-toastify'
 import ItemList from './ItemList'
-import PageNotFound from './PageNotFound'
+import PageNotFound from '../Navigation/PageNotFound'
 
 const ItemListContainer = () => {
 
@@ -13,7 +14,7 @@ const ItemListContainer = () => {
     const [productos, setProductos] = useState([])
     const [categoriaExists,setCategoriaExists] = useState(true)
   
-    useEffect(() => {
+    useEffect( () => {
         const productosCollection = collection(db, 'items')
         let filtro
   
@@ -50,7 +51,7 @@ const ItemListContainer = () => {
         <>
         {carga 
             ? categoriaExists ? <ItemList productos={productos}/> : <PageNotFound/>
-            : 'Cargando...'}
+            : <Container className='loadingPages'>Cargando...</Container>}
         </>
     )
 }

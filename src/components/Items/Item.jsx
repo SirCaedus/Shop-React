@@ -6,8 +6,8 @@ const Item = ({item}) => {
     return (
         <Col>
             <Card border='secondary' text='center' className='marginCard' key={item.id}>
-                <Card.Img variant='top' src={item.imagen} className='imgSize bgMain' alt={item.nombre}/>
-                <Card.Body className='bgMain'>
+                <Card.Img variant='top' src={item.imagen} className='imgSize bgCard' alt={item.nombre}/>
+                <Card.Body className='bgCard'>
                     <Card.Title className='fontTitle'>{item.nombre}</Card.Title>
                     <Card.Text>${item.precio}</Card.Text>
                     <ItemCount item={item} location='main'/>

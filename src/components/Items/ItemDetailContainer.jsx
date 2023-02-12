@@ -1,10 +1,11 @@
 import { useEffect,useState } from 'react'
 import { useParams } from 'react-router-dom'
+import { Container } from 'react-bootstrap'
 import { doc , getDoc } from 'firebase/firestore'
-import { db } from '../Firebase'
+import { db } from '../../Firebase'
 import { toast } from 'react-toastify'
 import ItemDetail from './ItemDetail'
-import PageNotfound from './PageNotFound'
+import PageNotfound from '../Navigation/PageNotFound'
 
 const ItemDetailContainer = () => {
    
@@ -14,7 +15,7 @@ const ItemDetailContainer = () => {
    const [idExists,setIdExists] = useState(true)
 
    
-   useEffect( () =>{
+   useEffect( () => {
         const docRef = doc(db,"items",id)
         const stock = getDoc(docRef)
         stock
@@ -49,7 +50,7 @@ const ItemDetailContainer = () => {
         <>
             {carga  
                 ?   idExists ? <ItemDetail item={item}/> : <PageNotfound/>
-                :   'Cargando...'
+                :   <Container className='loadingPages'>Cargando...</Container>
             }
         </>
     )

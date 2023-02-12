@@ -1,9 +1,9 @@
 import { Route, Routes } from 'react-router-dom'
-import ItemListContainer from './ItemListContainer'
-import ItemDetailContainer from './ItemDetailContainer'
-import CartContainer from './CartContainer'
+import ItemListContainer from '../Items/ItemListContainer'
+import ItemDetailContainer from '../Items/ItemDetailContainer'
+import CartContainer from '../Cart/CartContainer'
 import PageNotFound from './PageNotFound'
-import CartCheckout from './CartCheckout'
+import CartCheckout from '../Cart/CartCheckout'
 
 const Main = () => {
 

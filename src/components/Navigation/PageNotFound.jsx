@@ -2,7 +2,7 @@ import { Container } from 'react-bootstrap'
 
 const PageNotFound = () => {
     return(
-        <Container>
+        <Container className='loadingPages'>
             <h1>ERROR 404</h1>
             <div>¡Ups! parece que la página que solicitaste no existe.</div>
         </Container>

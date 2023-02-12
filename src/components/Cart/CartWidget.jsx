@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import { Col,Nav } from 'react-bootstrap'
-import { useContexto } from './CustomProvider'
-import Cart from '../assets/images/carrito.png'
+import { useContexto } from '../CustomProvider'
+import Cart from '../../assets/images/carrito.png'
 
 const CartWidget = () => {
 

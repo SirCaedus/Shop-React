@@ -1,19 +1,16 @@
 import { initializeApp } from 'firebase/app'
 import { getFirestore } from 'firebase/firestore'
-import { dotenv } from 'dotenv'
 
-dotenv.config()
-
-const { DB_API_KEY, DB_AUTH_DOMAIN, DB_PROYECT_ID, 
-        DB_STORAGE_BUCKET, DB_MESSAGING_SENDER_ID, DB_APP_ID } = process.env
+const { REACT_APP_DB_API_KEY, REACT_APP_DB_AUTH_DOMAIN, REACT_APP_DB_PROYECT_ID, 
+        REACT_APP_DB_STORAGE_BUCKET, REACT_APP_DB_MESSAGING_SENDER_ID, REACT_APP_DB_APP_ID } = process.env
 
 const firebaseConfig = {
-    apiKey: DB_API_KEY,
-    authDomain: DB_AUTH_DOMAIN,
-    projectId: DB_PROYECT_ID,
-    storageBucket: DB_STORAGE_BUCKET,
-    messagingSenderId: DB_MESSAGING_SENDER_ID,
-    appId: DB_APP_ID
+    apiKey: REACT_APP_DB_API_KEY,
+    authDomain: REACT_APP_DB_AUTH_DOMAIN,
+    projectId: REACT_APP_DB_PROYECT_ID,
+    storageBucket: REACT_APP_DB_STORAGE_BUCKET,
+    messagingSenderId: REACT_APP_DB_MESSAGING_SENDER_ID,
+    appId: REACT_APP_DB_APP_ID
 }
 
 const app = initializeApp(firebaseConfig)

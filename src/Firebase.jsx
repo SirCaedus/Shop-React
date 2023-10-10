@@ -1,13 +1,19 @@
 import { initializeApp } from 'firebase/app'
 import { getFirestore } from 'firebase/firestore'
+import { dotenv } from 'dotenv'
+
+dotenv.config()
+
+const { DB_API_KEY, DB_AUTH_DOMAIN, DB_PROYECT_ID, 
+        DB_STORAGE_BUCKET, DB_MESSAGING_SENDER_ID, DB_APP_ID } = process.env
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDcA5ZW3WTVhz2u4ww2mqw087rCDiZzLWE",
-    authDomain: "shop-react-63b40.firebaseapp.com",
-    projectId: "shop-react-63b40",
-    storageBucket: "shop-react-63b40.appspot.com",
-    messagingSenderId: "54449995660",
-    appId: "1:54449995660:web:3c0450d620e15e9f6aa0a9"
+    apiKey: DB_API_KEY,
+    authDomain: DB_AUTH_DOMAIN,
+    projectId: DB_PROYECT_ID,
+    storageBucket: DB_STORAGE_BUCKET,
+    messagingSenderId: DB_MESSAGING_SENDER_ID,
+    appId: DB_APP_ID
 }
 
 const app = initializeApp(firebaseConfig)

@@ -20,7 +20,7 @@ const NavBar = () => {
         {path: '/category/Mago', nombre: 'Mago', imgSrc: MagoPic, altText: 'imagen mago'},
         {path: '/category/Tanque', nombre: 'Tanque', imgSrc: TanquePic, altText: 'imagen tanque'},
         {path: '/category/Soporte', nombre: 'Soporte', imgSrc: SoportePic, altText: 'imagen supp'},
-      ]
+    ]
 
     return(
         <Navbar expand='lg' sticky='top' bg='customDark' variant='dark' className='fontWhite'>
